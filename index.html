@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pink Header</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome for Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+  <!-- Google Font: Poppins (Semi-Bold) -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+  <!-- custom css-->
+  <link href="style.css" rel="stylesheet">
+
+
+  <style>
+     *{
+    padding: 0;
+    margin: 0;
+    
+ }
+ 
+ body {
+      font-family: 'Poppins', sans-serif;
+      overflow-x: hidden;
+    }
+ :root{
+      --bg-pink: #f7cfd6; /* page background */
+      --card-bg: #fff7fb; /* inner card tone */
+      --accent: #e85a75;  /* button / title accent */
+    }
+    .top-bar {
+      background-color: #f8c8d8;
+      color: white;
+      padding: 10px 0;
+      font-weight: 500;
+    }
+
+    .search-bar {
+      background-color: #e88ca1;
+      border: none;
+      border-radius: 25px 0 0 25px;
+      color: white;
+      padding-left: 20px;
+    }
+
+    .search-bar::placeholder {
+      color: white;
+    }
+
+    .search-btn {
+      background-color: #e88ca1;
+      border-radius: 0 25px 25px 0;
+      border: none;
+    }
+
+    .icon-text {
+      color: white;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.95rem;
+      margin: 0 10px;
+    }
+
+    .cart-icon {
+      position: relative;
+    }
+
+    .cart-badge {
+      position: absolute;
+      top: -8px;
+      right: 32px;
+      background-color: white;
+      color: #e88ca1;
+      font-size: 0.65rem;
+      font-weight: 600;
+      border-radius: 50%;
+      width: 14px;
+      height: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .input-group {
+      max-width: 400px;
+    }
+
+    @media (max-width: 768px) {
+      .icon-text {
+        margin: 5px 0;
+      }
+    }
+
+    /* navbar */
+        .navbar-brand img {
+      height: 70px;
+    }
+    .brand-text {
+      font-size: 12px;
+      font-weight: bold;
+      color: #e91e63;
+      text-align: center;
+      display: block;
+    }
+    .nav-link {
+      font-weight: 600;
+      margin-left: 10px;
+    }
+    .nav-link img {
+      height: 20px;
+      margin-right: 5px;
+    }
+/* banner */
+   .promo-card {
+      background: linear-gradient(135deg, #eae6e3, #f8f6f4);
+      border-radius: 25px;
+      padding: 0 0 0 40px;
+      text-align: right;
+     position: relative;
+      max-width: 700px;
+      margin: auto;
+    }
+    .promo-text {
+      font-size: 3rem;
+      position: absolute;
+      font-weight: 800;
+      padding-top:15px;
+      text-align: left;
+      color: #ffffff;
+      line-height: 1.1;
+    }
+    .promo-text span {
+      display: block;
+      font-size: 1.5rem;
+      font-weight: 400;
+      
+      margin-top: 10px;
+    }
+    .promo-card img {
+      max-width: 280px;
+      border-radius: 15px;
+      text-align: right;
+    }
+    /* Carousel Arrows Styling */
+    .carousel-control-prev, .carousel-control-next {
+      width: 50px;
+    }
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-size: 100% 100%;
+      filter: invert(1); /* makes arrows white */
+    }
+    .carousel-control-prev { left: -60px; }
+    .carousel-control-next { right: -60px; }
+
+    /* product */
+       .product-wrapper {
+      text-align: center;
+    }
+
+    .product-title {
+      font-size: 18px;
+      font-weight: bold;
+      color: #e91e63;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+
+    .product-card {
+      position: relative;
+      border-radius: 30px;
+      overflow: hidden;
+      height: 420px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .view-more-btn {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 10px 30px;
+      background: #e91e63;
+      color: #fff;
+      border: none;
+      border-radius: 30px;
+      font-weight: 500;
+      font-size: 16px;
+      transition: background 0.3s ease;
+    }
+
+    .view-more-btn:hover {
+      background: #c2185b;
+    }
+
+    
+    .best-sellers {
+      padding: 60px 0;
+      background: var(--bg-pink);
+    }
+
+    .section-title {
+      font-weight: 800;
+      letter-spacing: 1px;
+      color: #fff;
+      text-align: center;
+      margin-bottom: 36px;
+      text-shadow: 0 1px 0 rgba(0,0,0,0.02);
+    }
+
+    .card-product {
+      background: linear-gradient(180deg, rgba(255,255,255,0.95), rgba(255,255,255,0.94));
+      border: none;
+      border-radius: 28px;
+      
+      box-shadow: 0 10px 30px rgba(17,17,17,0.06);
+      position: relative;
+      min-height: 220px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+
+    .card-product .img-wrap {
+      
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      overflow: hidden;
+      border-radius: 18px;
+      background: #fff;
+    }
+
+    .card-product img {
+    
+      object-fit: contain;
+      display:block;
+    }
+
+    /* Ribbon badge */
+    .ribbon {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      background: rgba(232,90,117,0.96);
+      color: #fff;
+      padding: 6px 12px;
+      border-radius: 10px;
+      font-weight:700;
+      font-size: 0.85rem;
+      box-shadow: 0 6px 18px rgba(232,90,117,0.12);
+    }
+
+    .ribbon.small {
+      padding: 6px 10px;
+      font-size: .78rem;
+      background: rgba(191,143,169,0.95);
+    }
+
+    .view-all-btn {
+      background: var(--accent);
+      border: none;
+      color: #fff;
+      padding: 12px 36px;
+      border-radius: 30px;
+      font-weight:700;
+      box-shadow: 0 6px 20px rgba(232,90,117,0.18);
+    }
+
+    /* Make card spacing feel similar to the screenshot */
+    @media (min-width: 992px){
+      .cards-row > .col-lg-3 { padding-left: 18px; padding-right: 18px;}
+    }
+    @media (max-width: 576px){
+      .card-product { padding:18px; min-height: 180px;}
+      .card-product .img-wrap { height: 120px; border-radius: 12px; }
+    }
+
+    .service-card {
+      background: #f9f9f9;
+      border-radius: 12px;
+      padding: 30px 20px;
+      text-align: center;
+      transition: all 0.3s ease;
+      height: 100%;
+    }
+
+    .service-card:hover {
+      background: #fff;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+      transform: translateY(-5px);
+    }
+
+    .service-icon {
+      font-size: 42px;
+      color: #e36a7d;
+      margin-bottom: 15px;
+    }
+
+    .service-title {
+      font-weight: 700;
+      margin-bottom: 5px;
+    }
+
+    .service-text {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+
+     .footer {
+      background-color: #4a3b3e;
+      color: #d9d9d9;
+      padding: 40px 0;
+      font-family: Arial, sans-serif;
+    }
+    .footer a {
+      color: #d9d9d9;
+      text-decoration: none;
+    }
+    .footer a:hover {
+      text-decoration: underline;
+    }
+    .footer .footer-heading {
+      color: #f7a6c1;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+    .footer img {
+      max-width: 60px;
+      margin-bottom: 10px;
+    }
+    .logo-text {
+      display: block;
+      color: #fff;
+      font-weight: bold;
+      font-size: 14px;
+      margin-top: 5px;
+    }
+        .email-input {
+      border-radius: 50px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      background: #fff;
+    }
+    .email-input input {
+      border: none;
+      outline: none;
+      padding: 10px 15px;
+      flex: 1;
+      border-radius: 50px 0 0 50px;
+    }
+    .email-input button {
+      border: none;
+      background: #e8899d;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 0 50px 50px 0;
+    }
+    .social-icons a {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      margin: 0 5px;
+      border-radius: 50%;
+      border: 2px solid #e8899d;
+      color: #e8899d;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .social-icons a:hover {
+      background: #e8899d;
+      color: white;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="top-bar">
+    <div class="container d-flex justify-content-between align-items-center flex-wrap">
+
+      <!-- Left Side: Contact Info -->
+      <div class="d-flex align-items-center flex-wrap">
+        <div class="icon-text"><i class="fas fa-phone"></i>: Contact Here</div>
+        <div class="icon-text ms-2"><i class="fas fa-envelope"></i>: Mail Here</div>
+      </div>
+
+      <!-- Center: Search Bar -->
+      <div class="d-flex justify-content-center my-2 my-lg-0 flex-grow-1">
+        <div class="input-group">
+          <input type="text" class="form-control search-bar" placeholder="Search">
+          <button class="btn search-btn" type="button">
+            <i class="fas fa-search text-white"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Right Side: Icons -->
+      <div class="d-flex align-items-center flex-wrap">
+        <div class="icon-text pe-1 pe-0"><i class="fas fa-user"></i> Log/Sign</div>
+        <div class="icon-text  pe-1 pe-0"><i class="fas fa-heart"></i> Wishlist</div>
+
+        <!-- Cart Icon with Badge -->
+        <div class="icon-text cart-icon  pe-1 pe-0">
+          <span class="cart-badge">2</span>
+          <i class="fas fa-shopping-cart"></i>
+
+          Cart
+        </div>
+
+        <div class="icon-text"><i class="fas fa-truck"></i> Track Order</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- navbar -->
+  <div class="container">
+    <nav class="navbar navbar-expand-lg bg-white">
+      <div class="container-fluid">
+
+        <!-- Logo -->
+        <a class="navbar-brand text-center" href="#">
+          <img src="imgs/logo.png" alt="Logo">
+
+        </a>
+
+        <!-- Mobile toggle -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Nav Items -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav align-items-center">
+
+            <!-- Home -->
+            <li class="nav-item">
+              <a class="nav-link" href="#"><img src="imgs/home-icon.png" alt="Gift for Her"> Home</a>
+            </li>
+
+            <!-- Gift for Him -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="giftHimDropdown" role="button" data-bs-toggle="dropdown">
+                <img src="imgs/man-icon.png" alt="Gift for Her"> Gift for Him
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Option 1</a></li>
+                <li><a class="dropdown-item" href="#">Option 2</a></li>
+              </ul>
+            </li>
+
+            <!-- Gift for Her (using uploaded woman.png) -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="giftHerDropdown" role="button" data-bs-toggle="dropdown">
+                <img src="imgs/woman-icon.png" alt="Gift for Her"> Gift for Her
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Option 1</a></li>
+                <li><a class="dropdown-item" href="#">Option 2</a></li>
+              </ul>
+            </li>
+
+            <!-- Contact -->
+            <li class="nav-item">
+              <a class="nav-link" href="#">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <!--banner-->
+  <!-- Container for the content -->
+  <div class="banner-content">
+    <div class="container">
+      <div class="row align-items-center justify-content-between">
+        <!-- Left side: Text content -->
+        <div class="col-md-6 text-content">
+          <h1>"We Print what the Heart Feels."</h1>
+        </div>
+        
+        <!-- Right side: Gift Box Image and Discount Offer -->
+        <div class="col-md-5">
+          <div id="promoCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+
+    <!-- Slide 1 -->
+    <div class="carousel-item active">
+      <div class="promo-card">
+        <div class="promo-text">
+          50% <br> <span>OFF</span>
+        </div>
+        <img src="imgs/best-seller-2.png" alt="Product">
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="carousel-item">
+      <div class="promo-card">
+        <div class="promo-text">
+          Buy 1 <br> <span>Get 1 Free</span>
+        </div>
+        <img src="imgs/best-seller-3.png" alt="Product">
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#promoCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#promoCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <!--product-->
+  <div class="container mt-5">
+    <div class="row text-center">
+      <!-- SHOP MEN -->
+      <div class="col-md-4 mb-5">
+        <div class="product-wrapper">
+          <div class="product-title">SHOP MEN</div>
+          <div class="product-card" style="background-image: url('imgs/shop-men.png');">
+            <button class="view-more-btn">View more →</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- SHOP WOMEN -->
+      <div class="col-md-4 mb-5">
+        <div class="product-wrapper">
+          <div class="product-title">SHOP WOMEN</div>
+          <div class="product-card" style="background-image: url('imgs/shop-women.png');">
+            <button class="view-more-btn">View more →</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ACCESSORIES -->
+      <div class="col-md-4 mb-5">
+        <div class="product-wrapper">
+          <div class="product-title">ACCESSOIRES</div>
+          <div class="product-card" style="background-image: url('imgs/accesorices.png');">
+            <button class="view-more-btn">View more →</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <section class="best-sellers">
+    <div class="container">
+      <!-- Title -->
+      <h2 class="section-title display-6 text-center text-white" style="font-size:32px;">
+        BEST SELLERS
+      </h2>
+
+      <!-- Cards -->
+      <div class="row cards-row g-3 justify-content-center mb-4">
+        <!-- Card 1 -->
+        <div class="col-10 col-sm-6 col-md-4 col-lg-3 d-flex">
+          <div class="card-product w-100">
+            <div class="img-wrap">
+              <!-- Replace src with each product image -->
+              <img src="imgs/best-seller-1.png" alt="Product 1">
+            </div>
+            <div class="ribbon small">NEW</div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-10 col-sm-6 col-md-4 col-lg-3 d-flex">
+          <div class="card-product w-100">
+            <div class="img-wrap">
+              <img src="imgs/best-seller-2.png" alt="Product 2">
+            </div>
+            <!-- no ribbon here -->
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-10 col-sm-6 col-md-4 col-lg-3 d-flex">
+          <div class="card-product w-100">
+            <div class="img-wrap">
+              <img src="imgs/best-seller-3.png" alt="Product 3">
+            </div>
+            <div class="ribbon">25%</div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-10 col-sm-6 col-md-4 col-lg-3 d-flex">
+          <div class="card-product w-100">
+            <div class="img-wrap">
+              <img src="imgs/best-seller-3.png" alt="Product 4">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Centered CTA -->
+      <div class="d-flex justify-content-center">
+        <button class="view-all-btn">VIEW ALL PRODUCTS</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-4 justify-content-center">
+
+        <!-- Free Shipping -->
+        <div class="col-10 col-sm-6 col-md-3">
+          <div class="service-card">
+            <img src="imgs/free-delivery.png">
+            <h6 class="service-title">Free Shipping</h6>
+            <p class="service-text">Free on order over Rs 300</p>
+          </div>
+        </div>
+
+        <!-- Security Payment -->
+        <div class="col-10 col-sm-6 col-md-3">
+          <div class="service-card">
+            <img src="imgs/credit-card.png">
+            <h6 class="service-title">Security Payment</h6>
+            <p class="service-text">100% security payment</p>
+          </div>
+        </div>
+
+        <!-- 30 Day Return -->
+        <div class="col-10 col-sm-6 col-md-3">
+          <div class="service-card">
+            <img src="imgs/return-box.png">
+            <h6 class="service-title">30 Day Return</h6>
+            <p class="service-text">30 day money guarantee</p>
+          </div>
+        </div>
+
+        <!-- 24/7 Support -->
+        <div class="col-10 col-sm-6 col-md-3">
+          <div class="service-card">
+            <img src="imgs/support.png">
+            <h6 class="service-title">24/7 Support</h6>
+            <p class="service-text">Support every time fast</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row align-items-start">
+        <!-- Logo Column -->
+        <div class="col-md-3 text-center text-md-start mb-3">
+          <img src="imgs/logo.png" alt="Print on Love Logo">
+
+        </div>
+
+        <!-- Customer Service -->
+        <div class="col-md-3 mb-3">
+          <h5 class="footer-heading">Customer Service</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Order History</a></li>
+            <li><a href="#">My Account</a></li>
+            <li><a href="#">Unsubscribe Notification</a></li>
+          </ul>
+        </div>
+
+        <!-- Information -->
+        <div class="col-md-3 mb-3">
+          <h5 class="footer-heading">Information</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Delivery Information</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Warranty</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Seller Login</a></li>
+          </ul>
+        </div>
+
+        <!-- Extras -->
+        <div class="col-md-3 mb-3">
+          <h5 class="footer-heading">Extras</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Gift Vouchers</a></li>
+            <li><a href="#">Wishlist</a></li>
+            <li><a href="#">Order History</a></li>
+            <li><a href="#">Track Your Order</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row justify-content-between align-items-center">
+      
+      <!-- Email Signup -->
+      <div class="col-md-6 col-lg-4">
+        <div class="email-input">
+          <input type="email" placeholder="Your Email">
+          <button>SignUP</button>
+        </div>
+      </div>
+
+      <!-- Social Icons -->
+      <div class="col-md-6 col-lg-8 text-end social-icons">
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+      </div>
+
+    </div>
+
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
