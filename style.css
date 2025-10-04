@@ -254,7 +254,7 @@
     }
     @media (max-width: 576px){
       .card-product { padding:18px; min-height: auto;}
-      .card-product .img-wrap { height: 120px; border-radius: 12px; }
+      .card-product .img-wrap {  border-radius: 12px; }
     }
 
     .service-card {
