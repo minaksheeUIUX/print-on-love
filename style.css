@@ -253,7 +253,7 @@
       .cards-row > .col-lg-3 { padding-left: 18px; padding-right: 18px;}
     }
     @media (max-width: 576px){
-      .card-product { padding:18px; min-height: 180px;}
+      .card-product { padding:18px; min-height: auto;}
       .card-product .img-wrap { height: 120px; border-radius: 12px; }
     }
 
