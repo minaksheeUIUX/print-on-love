@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pink Header</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome for Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+  <!-- Google Font: Poppins (Semi-Bold) -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+  <!-- custom css-->
+  <link href="style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="top-bar">
+    <div class="container d-flex justify-content-between align-items-center flex-wrap">
+
+      <!-- Left Side: Contact Info -->
+      <div class="d-flex align-items-center flex-wrap">
+        <div class="icon-text"><i class="fas fa-phone"></i>: Contact Here</div>
+        <div class="icon-text ms-2"><i class="fas fa-envelope"></i>: Mail Here</div>
+      </div>
+
+      <!-- Center: Search Bar -->
+      <div class="d-flex justify-content-center my-2 my-lg-0 flex-grow-1">
+        <div class="input-group">
+          <input type="text" class="form-control search-bar" placeholder="Search">
+          <button class="btn search-btn" type="button">
+            <i class="fas fa-search text-white"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Right Side: Icons -->
+      <div class="d-flex align-items-center flex-wrap">
+        <div class="icon-text pe-1 pe-0"><i class="fas fa-user"></i>
+          <a href="#"> Login </a>/<a href="#"> Sign in</a>
+        </div>
+        <div class="icon-text  pe-1 pe-0">
+          <a href="#"> <i class="fas fa-heart"></i> Wishlist</a>
+        </div>
+
+        <!-- Cart Icon with Badge -->
+        <div class="icon-text cart-icon  pe-1 pe-0">
+          <a href="#"> <span class="cart-badge">2</span>
+            <i class="fas fa-shopping-cart"></i>
+
+            Cart</a>
+
+        </div>
+
+        <div class="icon-text">
+          <a href="#"> <i class="fas fa-truck"></i> Track Order</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- navbar -->
+  <div class="container">
+    <nav class="navbar navbar-expand-lg bg-white">
+      <div class="container-fluid">
+
+        <!-- Logo -->
+        <a class="navbar-brand text-center" href="#">
+          <img src="imgs/logo.png" alt="Logo">
+
+        </a>
+
+        <!-- Mobile toggle -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Nav Items -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav align-items-center">
+
+            <!-- Home -->
+            <li class="nav-item">
+              <a class="nav-link" href="#"><img src="imgs/home-icon.png" alt="Gift for Her"> Home</a>
+            </li>
+
+            <!-- Gift for Him -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="giftHimDropdown" role="button" data-bs-toggle="dropdown">
+                <img src="imgs/man-icon.png" alt="Gift for Her"> Gift for Him
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Option 1</a></li>
+                <li><a class="dropdown-item" href="#">Option 2</a></li>
+              </ul>
+            </li>
+
+            <!-- Gift for Her (using uploaded woman.png) -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="giftHerDropdown" role="button" data-bs-toggle="dropdown">
+                <img src="imgs/woman-icon.png" alt="Gift for Her"> Gift for Her
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Option 1</a></li>
+                <li><a class="dropdown-item" href="#">Option 2</a></li>
+              </ul>
+            </li>
+
+            <!-- Contact -->
+            <li class="nav-item">
+              <a class="nav-link" href="#">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <!-- product details -->
+
+  <div class="container py-5">
+    <div class="row">
+      <!-- Product Image -->
+      <div class="col-md-6 text-center">
+        <img src="imgs/shop-men.png" alt="Hoodie" class="product-img shadow-sm img-fluid">
+        <div class="d-flex justify-content-center mt-3">
+          <img src="imgs/shop-men.png" class="thumbnail-img mx-1" alt="thumb1">
+          <img src="imgs/shop-men.png" class="thumbnail-img mx-1" alt="thumb2">
+          <img src="imgs/shop-men.png" class="thumbnail-img mx-1" alt="thumb3">
+          <img src="imgs/shop-men.png" class="thumbnail-img mx-1" alt="thumb4">
+        </div>
+      </div>
+
+      <!-- Product Info -->
+      <div class="col-md-6">
+        <h4><strong>H&amp;M Men's<br>Loose Fit Hoodie</strong></h4>
+        <div class="text-warning mb-2">
+          ★★★★☆
+          <span class="text-muted small">41 reviews</span>
+        </div>
+        <p class="text-muted">
+          Suspendisse quos? Tempus cras iure temporibus? Eu laudantium cubilia sem sem! Repudiandae et! Massa senectus
+          enim minim sociosqu delectus posuere.
+        </p>
+        <h5><strong>Price : 1999 ₹</strong></h5>
+        <p class="mb-1"><small><strong>91%</strong> of buyers enjoyed this product! (<strong>87 votes</strong>)</small>
+        </p>
+
+        <p><strong>Sizes:</strong>
+          <span class="ms-2">S</span>
+          <span class="ms-2">M</span>
+          <span class="ms-2">L</span>
+          <span class="ms-2">XL</span>
+        </p>
+
+        <p><strong>Colors:</strong>
+          <span class="color-dot color-red"></span>
+          <span class="color-dot color-orange"></span>
+          <span class="color-dot color-blue"></span>
+          <span class="color-dot color-yellow"></span>
+        </p>
+
+        <button class="btn btn-pink mt-3 px-4">ADD TO CART</button>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="product-pd-card mx-auto">
+          <div class="p-0">
+            <div class="d-flex card-horizontal">
+
+              <!-- LEFT: image -->
+              <div class="img-wrap d-flex ">
+                <div class="img-outer">
+                  <!-- use the provided image path -->
+                  <img src="imgs/shop-men.png" alt="Hoodie" class="product-image">
+                </div>
+              </div>
+
+              <!-- RIGHT: content -->
+              <div class="flex-grow-1 p-3">
+                <div class="d-flex justify-content-between align-items-start">
+                  <div>
+                    <div class="title">H&amp;M Men's Loose Fit Hoodie</div>
+                    <div class="subtitle">41 reviews</div>
+                  </div>
+                  <!-- small badge or rating area could go here -->
+                </div>
+
+                <div class="stars">
+                  <!-- 5 filled stars (SVG) -->
+                  <svg viewBox="0 0 20 20" fill="#f6c84c" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M10 1.6l2.2 4.46 4.92.72-3.56 3.47.84 4.89L10 13.9 5.58 15.14l.84-4.89L2.86 6.78l4.92-.72L10 1.6z" />
+                  </svg>
+                  <svg viewBox="0 0 20 20" fill="#f6c84c" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M10 1.6l2.2 4.46 4.92.72-3.56 3.47.84 4.89L10 13.9 5.58 15.14l.84-4.89L2.86 6.78l4.92-.72L10 1.6z" />
+                  </svg>
+                  <svg viewBox="0 0 20 20" fill="#f6c84c" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M10 1.6l2.2 4.46 4.92.72-3.56 3.47.84 4.89L10 13.9 5.58 15.14l.84-4.89L2.86 6.78l4.92-.72L10 1.6z" />
+                  </svg>
+                  <svg viewBox="0 0 20 20" fill="#f6c84c" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M10 1.6l2.2 4.46 4.92.72-3.56 3.47.84 4.89L10 13.9 5.58 15.14l.84-4.89L2.86 6.78l4.92-.72L10 1.6z" />
+                  </svg>
+                  <svg viewBox="0 0 20 20" fill="#f6c84c" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M10 1.6l2.2 4.46 4.92.72-3.56 3.47.84 4.89L10 13.9 5.58 15.14l.84-4.89L2.86 6.78l4.92-.72L10 1.6z" />
+                  </svg>
+
+                </div>
+
+
+              </div>
+            </div>
+            <div class="d-flex justify-content-between mt-2">
+              <div class="price-row align-self-start">
+                <div class="price">Price : <span style="color:#111;">1999 ₹</span></div>
+              </div>
+
+              <div class="ms-3 d-flex align-items-start">
+                <div style="font-size:.9rem; color:var(--muted); margin-right:.5rem;">Colors:</div>
+                <div class="colors">
+                  <span class="dot" style="background:#ff7a7a"></span>
+                  <span class="dot" style="background:#ffcc00"></span>
+                  <span class="dot" style="background:#1e90ff"></span>
+                  <span class="dot" style="background:#00c853"></span>
+                </div>
+              </div>
+            </div>
+
+            <p class="desc">
+              Suspendisse quos? Tempus cras iure temporibus? Eu laudantium cubilia sem sem! Repudiandae et! Massa
+              senectus enim minim sociosqu delectus posuere.
+            </p>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-md-4">
+        <div class="product-pd-card mx-auto">
+          <div class="p-0">
+            <div class="d-flex card-horizontal">
+
+              <!-- LEFT: image -->
+              <div class="img-wrap d-flex ">
+                <div class="img-outer">
+                  <!-- use the provided image path -->
+                  <img src="imgs/shop-men.png" alt="Hoodie" class="product-image">
+                </div>
+              </div>
+
+              <!-- RIGHT: content -->
+              <div class="flex-grow-1 p-3">
+                <div class="d-flex justify-content-between align-items-start">
+                  <div>
+                    <div class="title">H&amp;M Men's Loose Fit Hoodie</div>
+                    <div class="subtitle">41 reviews</div>
+                  </div>
+                  <!-- small badge or rating area could go here -->
+                </div>
+
+                <div class="stars">
+                  <!-- 5 filled stars (SVG) -->
+                  <svg viewBox="0 0 20 20" fill="#f6c84c" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M10 1.6l2.2 4.46 4.92.72-3.56 3.47.84 4.89L10 13.9 5.58 15.14l.84-4.89L2.86 6.78l4.92-.72L10 1.6z" />
+                  </svg>
+                  <svg viewBox="0 0 20 20" fill="#f6c84c" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M10 1.6l2.2 4.46 4.92.72-3.56 3.47.84 4.89L10 13.9 5.58 15.14l.84-4.89L2.86 6.78l4.92-.72L10 1.6z" />
+                  </svg>
+                  <svg viewBox="0 0 20 20" fill="#f6c84c" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M10 1.6l2.2 4.46 4.92.72-3.56 3.47.84 4.89L10 13.9 5.58 15.14l.84-4.89L2.86 6.78l4.92-.72L10 1.6z" />
+                  </svg>
+                  <svg viewBox="0 0 20 20" fill="#f6c84c" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M10 1.6l2.2 4.46 4.92.72-3.56 3.47.84 4.89L10 13.9 5.58 15.14l.84-4.89L2.86 6.78l4.92-.72L10 1.6z" />
+                  </svg>
+                  <svg viewBox="0 0 20 20" fill="#f6c84c" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M10 1.6l2.2 4.46 4.92.72-3.56 3.47.84 4.89L10 13.9 5.58 15.14l.84-4.89L2.86 6.78l4.92-.72L10 1.6z" />
+                  </svg>
+
+                </div>
+
+
+              </div>
+            </div>
+            <div class="d-flex justify-content-between mt-2">
+              <div class="price-row align-self-start">
+                <div class="price">Price : <span style="color:#111;">1999 ₹</span></div>
+              </div>
+
+              <div class="ms-3 d-flex align-items-start">
+                <div style="font-size:.9rem; color:var(--muted); margin-right:.5rem;">Colors:</div>
+                <div class="colors">
+                  <span class="dot" style="background:#ff7a7a"></span>
+                  <span class="dot" style="background:#ffcc00"></span>
+                  <span class="dot" style="background:#1e90ff"></span>
+                  <span class="dot" style="background:#00c853"></span>
+                </div>
+              </div>
+            </div>
+
+            <p class="desc">
+              Suspendisse quos? Tempus cras iure temporibus? Eu laudantium cubilia sem sem! Repudiandae et! Massa
+              senectus enim minim sociosqu delectus posuere.
+            </p>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-md-4">
+        <div class="product-pd-card mx-auto">
+          <div class="p-0">
+            <div class="d-flex card-horizontal">
+
+              <!-- LEFT: image -->
+              <div class="img-wrap d-flex ">
+                <div class="img-outer">
+                  <!-- use the provided image path -->
+                  <img src="imgs/shop-men.png" alt="Hoodie" class="product-image">
+                </div>
+              </div>
+
+              <!-- RIGHT: content -->
+              <div class="flex-grow-1 p-3">
+                <div class="d-flex justify-content-between align-items-start">
+                  <div>
+                    <div class="title">H&amp;M Men's Loose Fit Hoodie</div>
+                    <div class="subtitle">41 reviews</div>
+                  </div>
+                  <!-- small badge or rating area could go here -->
+                </div>
+
+                <div class="stars">
+                  <!-- 5 filled stars (SVG) -->
+                  <svg viewBox="0 0 20 20" fill="#f6c84c" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M10 1.6l2.2 4.46 4.92.72-3.56 3.47.84 4.89L10 13.9 5.58 15.14l.84-4.89L2.86 6.78l4.92-.72L10 1.6z" />
+                  </svg>
+                  <svg viewBox="0 0 20 20" fill="#f6c84c" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M10 1.6l2.2 4.46 4.92.72-3.56 3.47.84 4.89L10 13.9 5.58 15.14l.84-4.89L2.86 6.78l4.92-.72L10 1.6z" />
+                  </svg>
+                  <svg viewBox="0 0 20 20" fill="#f6c84c" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M10 1.6l2.2 4.46 4.92.72-3.56 3.47.84 4.89L10 13.9 5.58 15.14l.84-4.89L2.86 6.78l4.92-.72L10 1.6z" />
+                  </svg>
+                  <svg viewBox="0 0 20 20" fill="#f6c84c" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M10 1.6l2.2 4.46 4.92.72-3.56 3.47.84 4.89L10 13.9 5.58 15.14l.84-4.89L2.86 6.78l4.92-.72L10 1.6z" />
+                  </svg>
+                  <svg viewBox="0 0 20 20" fill="#f6c84c" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M10 1.6l2.2 4.46 4.92.72-3.56 3.47.84 4.89L10 13.9 5.58 15.14l.84-4.89L2.86 6.78l4.92-.72L10 1.6z" />
+                  </svg>
+
+                </div>
+
+
+              </div>
+            </div>
+            <div class="d-flex justify-content-between mt-2">
+              <div class="price-row align-self-start">
+                <div class="price">Price : <span style="color:#111;">1999 ₹</span></div>
+              </div>
+
+              <div class="ms-3 d-flex align-items-start">
+                <div style="font-size:.9rem; color:var(--muted); margin-right:.5rem;">Colors:</div>
+                <div class="colors">
+                  <span class="dot" style="background:#ff7a7a"></span>
+                  <span class="dot" style="background:#ffcc00"></span>
+                  <span class="dot" style="background:#1e90ff"></span>
+                  <span class="dot" style="background:#00c853"></span>
+                </div>
+              </div>
+            </div>
+
+            <p class="desc">
+              Suspendisse quos? Tempus cras iure temporibus? Eu laudantium cubilia sem sem! Repudiandae et! Massa
+              senectus enim minim sociosqu delectus posuere.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <hr />
+  </div>
+
+
+  
+  <!--customer says-->
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-4 me-4">
+
+        <h5 class="fw-bold mb-3">Customer reviews</h5>
+        <!-- Stars row -->
+        <div class="d-flex align-items-center mb-3">
+          <div class="star">★</div>
+          <div class="star">★</div>
+          <div class="star">★</div>
+          <div class="star">★</div>
+          <div class="star">★</div>
+          <span class="ms-2 fw-semibold">5 Out of 5</span>
+        </div>
+        <!-- Rating rows -->
+        <div class="mb-2 d-flex align-items-center">
+          <div class="review-label">5 Star</div>
+          <div class="flex-grow-1">
+            <div class="progress">
+              <div class="progress-bar" style="width:100%"></div>
+            </div>
+          </div>
+        </div>
+        <div class="mb-2 d-flex align-items-center">
+          <div class="review-label">4 Star</div>
+          <div class="flex-grow-1">
+            <div class="progress">
+              <div class="progress-bar" style="width:70%"></div>
+            </div>
+          </div>
+        </div>
+        <div class="mb-2 d-flex align-items-center">
+          <div class="review-label">3 Star</div>
+          <div class="flex-grow-1">
+            <div class="progress">
+              <div class="progress-bar" style="width:50%"></div>
+            </div>
+          </div>
+        </div>
+        <div class="mb-2 d-flex align-items-center">
+          <div class="review-label">2 Star</div>
+          <div class="flex-grow-1">
+            <div class="progress">
+              <div class="progress-bar" style="width:30%"></div>
+            </div>
+          </div>
+        </div>
+        <div class="mb-2 d-flex align-items-center">
+          <div class="review-label">1 Star</div>
+          <div class="flex-grow-1">
+            <div class="progress">
+              <div class="progress-bar" style="width:40%"></div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="col-md-5 ms-5">
+        <div class="review-card">
+           <h5 class="fw-bold mb-3">Customer says</h4>
+
+          <div class="my-2">
+            <strong>Mohit rao</strong>
+            <p class="stars">
+              &#9733;&#9733;&#9733;&#9733;&#9734; Excellent Product
+            </p>
+          </div>
+
+          <p class="fs-6">
+            I have purchased this t-shirt and I'm really impressed with the overall quality. The cotton fabric is soft,
+            breathable, and feels great on the skin – perfect for everyday wear. The fit is true to size and gives a
+            neat, clean look without being too tight or too loose. The color is exactly as shown and adds a subtle touch
+            of style to my wardrobe.
+          </p>
+          <p class="fs-6">Highly recommend this if you’re looking for a well-made, comfortable t-shirt at a reasonable price.</p>
+
+          <div class="product-images d-flex">
+            <img src="imgs/shop-men.png" alt="Product image 1">
+            <img src="imgs/shop-men.png" alt="Product image 1">
+          </div>
+
+         
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- footer -->
+ <footer class="footer mt-5">
+    <div class="container">
+      <div class="row align-items-start">
+        <!-- Logo Column -->
+        <div class="col-md-3 text-center text-md-start mb-3">
+          <img src="imgs/logo.png" alt="Print on Love Logo">
+
+        </div>
+
+        <!-- Customer Service -->
+        <div class="col-md-3 mb-3">
+          <h5 class="footer-heading">Customer Service</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Order History</a></li>
+            <li><a href="#">My Account</a></li>
+            <li><a href="#">Unsubscribe Notification</a></li>
+          </ul>
+        </div>
+
+        <!-- Information -->
+        <div class="col-md-3 mb-3">
+          <h5 class="footer-heading">Information</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Delivery Information</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Warranty</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Seller Login</a></li>
+          </ul>
+        </div>
+
+        <!-- Extras -->
+        <div class="col-md-3 mb-3">
+          <h5 class="footer-heading">Extras</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Gift Vouchers</a></li>
+            <li><a href="#">Wishlist</a></li>
+            <li><a href="#">Order History</a></li>
+            <li><a href="#">Track Your Order</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row justify-content-between align-items-center">
+      
+      <!-- Email Signup -->
+      <div class="col-md-6 col-lg-4">
+        <div class="email-input">
+          <input type="email" placeholder="Your Email">
+          <button>SignUP</button>
+        </div>
+      </div>
+
+      <!-- Social Icons -->
+      <div class="col-md-6 col-lg-8 text-end social-icons">
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+      </div>
+
+    </div>
+
+    </div>
+  </footer>
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

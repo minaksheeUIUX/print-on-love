@@ -3,7 +3,16 @@
     margin: 0;
     
  }
- 
+ a{
+  text-decoration: none;
+ }
+ a:hover{
+  text-decoration: none;
+ }
+ .btn-pink{
+  background-color: var(--accent);
+  color: #fff;
+ }
  body {
       font-family: 'Poppins', sans-serif;
       overflow-x: hidden;
@@ -19,7 +28,9 @@
       padding: 10px 0;
       font-weight: 500;
     }
-
+.top-bar a{
+  color: #fff;
+}
     .search-bar {
       background-color: #e88ca1;
       border: none;
@@ -97,40 +108,53 @@
       margin-right: 5px;
     }
 /* banner */
-    .carousel-item img {
-      width: 100%;
-      height: auto;
-    }
-    .banner-content {
-      padding: 10% 0;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      background-image: url(imgs/banner.png); /* Pink background */
-      background-size: cover;
-     
-    }
-    .text-content {
-      font-size: 24px;
-      font-weight: bold;
-      color: white;
-    }
-    
-    .gift-box {
-      color: white;
-      padding: 15px;
-      border-radius: 8px;
-      
-    }
-    .gift-box .carousel-caption {
-    position: absolute; 
-    top: 1.25rem;
-    left: 0;
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
-    color: #fff;
-    text-align: center;
+.banner-content{
+  background: url(./imgs/banner.png);
+  padding: 50px 0;
+  color: #fff;
 }
+   .promo-card {
+      background: linear-gradient(135deg, #eae6e3, #f8f6f4);
+      border-radius: 25px;
+      padding: 0 0 0 40px;
+      text-align: right;
+     position: relative;
+      max-width: 700px;
+      margin: auto;
+    }
+    .promo-text {
+      font-size: 3rem;
+      position: absolute;
+      font-weight: 800;
+      padding-top:15px;
+      text-align: left;
+      color: #ffffff;
+      line-height: 1.1;
+    }
+    .promo-text span {
+      display: block;
+      font-size: 1.5rem;
+      font-weight: 400;
+      
+      margin-top: 10px;
+    }
+    .promo-card img {
+      max-width: 280px;
+      border-radius: 15px;
+      text-align: right;
+    }
+    /* Carousel Arrows Styling */
+    .carousel-control-prev, .carousel-control-next {
+      width: 50px;
+    }
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-size: 100% 100%;
+      filter: invert(1); /* makes arrows white */
+    }
+    .carousel-control-prev { left: -60px; }
+    .carousel-control-next { right: -60px; }
+
     /* product */
        .product-wrapper {
       text-align: center;
@@ -253,8 +277,8 @@
       .cards-row > .col-lg-3 { padding-left: 18px; padding-right: 18px;}
     }
     @media (max-width: 576px){
-      .card-product { padding:18px; min-height: auto;}
-      .card-product .img-wrap {  border-radius: 12px; }
+      .card-product { padding:18px; min-height: 180px;}
+      .card-product .img-wrap { height: 120px; border-radius: 12px; }
     }
 
     .service-card {
@@ -318,3 +342,162 @@
       font-size: 14px;
       margin-top: 5px;
     }
+        .email-input {
+      border-radius: 50px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      background: #fff;
+    }
+    .email-input input {
+      border: none;
+      outline: none;
+      padding: 10px 15px;
+      flex: 1;
+      border-radius: 50px 0 0 50px;
+    }
+    .email-input button {
+      border: none;
+      background: #e8899d;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 0 50px 50px 0;
+    }
+    .social-icons a {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      margin: 0 5px;
+      border-radius: 50%;
+      border: 2px solid #e8899d;
+      color: #e8899d;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .social-icons a:hover {
+      background: #e8899d;
+      color: white;
+    }
+/* product deatils page css */
+    .product-img {
+    
+      border-radius: 10px;
+      
+    }
+    .color-dot {
+      height: 15px;
+      width: 15px;
+      border-radius: 50%;
+      display: inline-block;
+      margin-right: 5px;
+      cursor: pointer;
+    }
+    .color-red { background-color: #f44336; }
+    .color-orange { background-color: #ff9800; }
+    .color-blue { background-color: #2196f3; }
+    .color-yellow { background-color: #ffeb3b; }
+    .thumbnail-img {
+      width: 60px;
+      height: auto;
+      margin-top: 10px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    /* Card container */
+    .product-card {
+      max-width: 520px;
+      border: none;
+      background: transparent;
+    }
+
+    .card-body {
+      padding: 0.6rem 0.75rem;
+    }
+
+    /* Left image area */
+    .img-wrap {
+      display:flex;
+      border-radius: 20px 0 0 20px; /* fallback */
+      position: relative;
+      overflow: visible;
+    }
+
+    /* Outer accent border (blue) */
+   
+
+    .product-image {
+      width: 170px;
+      height: 170px;
+      object-fit: cover;
+      display:block;
+      border-radius: 10px;
+      background: #eee;
+    }
+
+    /* Right column content */
+    .title {
+      font-weight: 700;
+      font-size: 1.05rem;
+      margin-bottom: .2rem;
+    }
+    .subtitle {
+      color: var(--muted);
+      font-size: .88rem;
+      margin-bottom: .6rem;
+    }
+
+    /* Stars row */
+    .stars { display:flex; align-items:center; margin-bottom:.6rem; }
+    .stars svg { width: 16px; height: 16px; }
+
+    .price-row { display:flex; align-items:center; gap:12px; margin-bottom:.5rem; }
+    .price {
+      font-weight:800;
+      font-size:1.15rem;
+    }
+    .price small { color:var(--muted); font-weight:600; margin-left:6px; font-size:.9rem; }
+
+    /* Color dots */
+    .colors { display:flex; gap:.5rem; align-items:center; margin-left: .25rem; }
+    .dot {
+      width:14px; height:14px; border-radius:50%; box-shadow:0 1px 2px rgba(0,0,0,0.12);
+    }
+
+    .desc { color:#4b5563; font-size:.92rem; margin-top:.5rem; line-height:1.25; }
+
+    /* Responsive: stack on small screens */
+    @media (max-width: 576px){
+      .card-horizontal { flex-direction: column; }
+      .img-wrap { border-radius: 18px; padding: .6rem; }
+      .img-outer { border-left: 0; border-top: 4px solid var(--accent); border-radius: 18px; }
+      .product-image { width: 100%; height: auto; max-width: 280px; }
+    }
+
+    /*customer says */
+        .star {
+      color: #ffa500; /* orange stars */
+      font-size: 20px;
+    }
+    .progress {
+      height: 12px;
+      border-radius: 6px;
+    }
+    .progress-bar {
+      background-color: #ffa500;
+    }
+    .review-label {
+      font-weight: 600;
+      min-width: 60px;
+    }
+   
+    .stars {
+      color: #ffc107;
+    }
+    .product-images img {
+      width: 100px;
+      margin-right: 10px;
+      border-radius: 5px;
+    }
+
