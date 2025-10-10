@@ -500,4 +500,12 @@
       margin-right: 10px;
       border-radius: 5px;
     }
-
+    /* inner-banner */
+.inner-banner{
+  background: url(imgs/inner-banner.png);
+}
+.breadcrumb-item+.breadcrumb-item::before {
+    
+    color: #fff;
+   
+}
