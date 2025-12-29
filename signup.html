@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sign Up | Print on Love</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Google Font: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- custom css-->
+    <link href="style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="top-bar">
+        <div class="container-fluid px-5 d-flex justify-content-between align-items-center flex-wrap">
+
+            <!-- Left Side: Contact Info -->
+            <div class="d-flex align-items-center flex-wrap">
+                <div class="icon-text"><i class="fas fa-phone"></i>: +1 234 567 8900</div>
+                <div class="icon-text ms-2"><i class="fas fa-envelope"></i>: support@printonlove.com</div>
+            </div>
+
+            <!-- Center: Search Bar -->
+            <div class="d-flex justify-content-center my-2 my-lg-0 flex-grow-1 mx-lg-5">
+                <div class="input-group">
+                    <input type="text" class="form-control search-bar" placeholder="Search">
+                    <button class="btn search-btn" type="button">
+                        <i class="fas fa-search text-white"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Right Side: Icons -->
+            <div class="d-flex align-items-center flex-wrap">
+                <div class="icon-text pe-1 pe-0"><i class="fas fa-user"></i>
+                    <a href="login.html"> Login </a>/ <a href="#"> Sign in</a>
+                </div>
+                <div class="icon-text  pe-1 pe-0">
+                    <a href="#"> <i class="fas fa-heart"></i> Wishlist</a>
+                </div>
+
+                <!-- Cart Icon with Badge -->
+                <div class="icon-text cart-icon  pe-1 pe-0">
+                    <a href="#"> <i class="fas fa-shopping-cart"></i> Cart (2)</a>
+                </div>
+
+                <div class="icon-text">
+                    <a href="#"> <i class="fas fa-truck"></i> Track Order</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+
+            <!-- Logo -->
+            <a class="navbar-brand text-center" href="index.html">
+                <img src="imgs/logo.png" alt="Logo">
+            </a>
+
+            <!-- Mobile toggle -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Nav Items -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+
+                    <!-- Home -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><img src="imgs/home-icon.png" alt="Home"> Home</a>
+                    </li>
+
+                    <!-- Gift for Him -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="giftHimDropdown" role="button"
+                            data-bs-toggle="dropdown">
+                            <img src="imgs/man-icon.png" alt="Gift for Him"> Gift for Him
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">T-Shirts</a></li>
+                            <li><a class="dropdown-item" href="#">Mugs</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Gift for Her -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="giftHerDropdown" role="button"
+                            data-bs-toggle="dropdown">
+                            <img src="imgs/woman-icon.png" alt="Gift for Her"> Gift for Her
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Jewelry</a></li>
+                            <li><a class="dropdown-item" href="#">Apparel</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Contact -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- SIGNUP SECTION -->
+    <section class="login-section">
+        <div class="login-card-wrapper">
+
+            <!-- Brand Side (Left) -->
+            <div class="login-brand-side">
+                <img src="imgs/logo.png" alt="Logo">
+                <h3>Join the Family!</h3>
+                <p class="mb-0">Create an account to unlock exclusive deals, faster checkout, and personalized
+                    recommendations.</p>
+            </div>
+
+            <!-- Form Side (Right) -->
+            <div class="login-form-side">
+                <h3 class="login-title">Sign Up</h3>
+
+                <form>
+                    <label class="form-label text-muted small fw-bold">Full Name</label>
+                    <div class="form-floating-custom">
+                        <input type="text" placeholder="John Doe">
+                        <i class="fas fa-user"></i>
+                    </div>
+
+                    <label class="form-label text-muted small fw-bold mt-2">Email Address</label>
+                    <div class="form-floating-custom">
+                        <input type="email" placeholder="example@mail.com">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+
+                    <label class="form-label text-muted small fw-bold mt-2">Password</label>
+                    <div class="form-floating-custom">
+                        <input type="password" placeholder="********">
+                        <i class="fas fa-lock"></i>
+                    </div>
+
+                    <label class="form-label text-muted small fw-bold mt-2">Confirm Password</label>
+                    <div class="form-floating-custom">
+                        <input type="password" placeholder="********">
+                        <i class="fas fa-key"></i>
+                    </div>
+
+                    <div class="form-check mb-4">
+                        <input class="form-check-input" type="checkbox" value="" id="agreeCheck">
+                        <label class="form-check-label small" for="agreeCheck">
+                            I agree to the <a href="#" class="text-primary text-decoration-none">Terms of Service</a> &
+                            Privacy Policy
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn-login-custom">Create Account</button>
+
+                    <div class="divider-text">
+                        <span>Or sign up with</span>
+                    </div>
+
+                    <div class="row g-2">
+                        <div class="col-6">
+                            <a href="#" class="social-login-btn">
+                                <i class="fab fa-google text-danger"></i> Google
+                            </a>
+                        </div>
+                        <div class="col-6">
+                            <a href="#" class="social-login-btn">
+                                <i class="fab fa-facebook-f text-primary"></i> Facebook
+                            </a>
+                        </div>
+                    </div>
+
+                    <p class="text-center mt-4 small text-muted">
+                        Already have an account? <a href="login.html"
+                            class="text-primary fw-bold text-decoration-none">Login</a>
+                    </p>
+
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-logo">
+                        <img src="imgs/logo.png" alt="Logo" style="height: 60px;">
+                    </div>
+                    <p class="text-white-50 small pe-lg-5">Print on Love brings you the finest custom-printed gifts.
+                        From
+                        heartfelt mugs to personalized apparel, we turn your memories into keepsakes.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-btn"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-btn"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-btn"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+                    <h5>Shop</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#">For Him</a></li>
+                        <li><a href="#">For Her</a></li>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">New Arrivals</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <h5>Newsletter</h5>
+                    <p class="text-white-50 small">Subscribe to get special offers, free giveaways, and
+                        once-in-a-lifetime deals.
+                    </p>
+                    <div class="newsletter-box">
+                        <input type="email" class="newsletter-input" placeholder="Enter your email">
+                        <button class="newsletter-btn"><i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="border-top border-secondary mt-5 pt-4 text-center text-white-50 small">
+                <p>&copy; 2024 Print on Love. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

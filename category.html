@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head> 
-  <meta charset="UTF-8"> 
+<head>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Pink Header</title>
+  <title>Print on Love | Shop Categories</title>
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -13,7 +13,7 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 
   <!-- Google Font: Poppins (Semi-Bold) -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- custom css-->
   <link href="style.css" rel="stylesheet">
@@ -21,18 +21,17 @@
 </head>
 
 <body>
-
-  <div class="top-bar ">
-    <div class="container d-flex justify-content-between align-items-center flex-wrap">
+  <div class="top-bar">
+    <div class="container-fluid px-5 d-flex justify-content-between align-items-center flex-wrap">
 
       <!-- Left Side: Contact Info -->
       <div class="d-flex align-items-center flex-wrap">
-        <div class="icon-text"><i class="fas fa-phone"></i>: Contact Here</div>
-        <div class="icon-text ms-2"><i class="fas fa-envelope"></i>: Mail Here</div>
+        <div class="icon-text"><i class="fas fa-phone"></i>: +1 234 567 8900</div>
+        <div class="icon-text ms-2"><i class="fas fa-envelope"></i>: support@printonlove.com</div>
       </div>
 
       <!-- Center: Search Bar -->
-      <div class="d-flex justify-content-center my-2 my-lg-0 flex-grow-1">
+      <div class="d-flex justify-content-center my-2 my-lg-0 flex-grow-1 mx-lg-5">
         <div class="input-group">
           <input type="text" class="form-control search-bar" placeholder="Search">
           <button class="btn search-btn" type="button">
@@ -44,617 +43,364 @@
       <!-- Right Side: Icons -->
       <div class="d-flex align-items-center flex-wrap">
         <div class="icon-text pe-1 pe-0"><i class="fas fa-user"></i>
-          <a href="login.html"> Login </a>/<a href="#"> Sign in</a>
+          <a href="login.html"> Login </a>/ <a href="#"> Sign in</a>
         </div>
         <div class="icon-text  pe-1 pe-0">
-           <a href="#"> <i class="fas fa-heart"></i> Wishlist</a></div>
+          <a href="#"> <i class="fas fa-heart"></i> Wishlist</a>
+        </div>
 
         <!-- Cart Icon with Badge -->
         <div class="icon-text cart-icon  pe-1 pe-0">
-          <a href="#">  <span class="cart-badge">2</span>
-          <i class="fas fa-shopping-cart"></i>
-
-          Cart</a>
-          
+          <a href="#"> <i class="fas fa-shopping-cart"></i> Cart (2)</a>
         </div>
 
         <div class="icon-text">
-           <a href="#"> <i class="fas fa-truck"></i> Track Order</a></div>
+          <a href="#"> <i class="fas fa-truck"></i> Track Order</a>
+        </div>
       </div>
 
     </div>
   </div>
 
   <!-- navbar -->
-   <div class="shadow-sm">
-  <div class="container">
-    <nav class="navbar navbar-expand-lg bg-white">
-      <div class="container-fluid">
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
 
-        <!-- Logo -->
-        <a class="navbar-brand text-center" href="index.html">
-          <img src="imgs/logo.png" alt="Logo">
+      <!-- Logo -->
+      <a class="navbar-brand text-center" href="index.html">
+        <img src="imgs/logo.png" alt="Logo">
+      </a>
 
-        </a>
+      <!-- Mobile toggle -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <!-- Mobile toggle -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+      <!-- Nav Items -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav align-items-center">
 
-        <!-- Nav Items -->
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-          <ul class="navbar-nav align-items-center">
+          <!-- Home -->
+          <li class="nav-item">
+            <a class="nav-link" href="index.html"><img src="imgs/home-icon.png" alt="Home"> Home</a>
+          </li>
 
-            <!-- Home -->
-            <li class="nav-item">
-              <a class="nav-link" href="#"><img src="imgs/home-icon.png" alt="Gift for Her"> Home</a>
-            </li>
+          <!-- Gift for Him -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="giftHimDropdown" role="button" data-bs-toggle="dropdown">
+              <img src="imgs/man-icon.png" alt="Gift for Him"> Gift for Him
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">T-Shirts</a></li>
+              <li><a class="dropdown-item" href="#">Mugs</a></li>
+            </ul>
+          </li>
 
-            <!-- Gift for Him -->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="giftHimDropdown" role="button" data-bs-toggle="dropdown">
-                <img src="imgs/man-icon.png" alt="Gift for Her"> Gift for Him
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Option 1</a></li>
-                <li><a class="dropdown-item" href="#">Option 2</a></li>
-              </ul>
-            </li>
+          <!-- Gift for Her -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="giftHerDropdown" role="button" data-bs-toggle="dropdown">
+              <img src="imgs/woman-icon.png" alt="Gift for Her"> Gift for Her
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Jewelry</a></li>
+              <li><a class="dropdown-item" href="#">Apparel</a></li>
+            </ul>
+          </li>
 
-            <!-- Gift for Her (using uploaded woman.png) -->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="giftHerDropdown" role="button" data-bs-toggle="dropdown">
-                <img src="imgs/woman-icon.png" alt="Gift for Her"> Gift for Her
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Option 1</a></li>
-                <li><a class="dropdown-item" href="#">Option 2</a></li>
-              </ul>
-            </li>
-
-            <!-- Contact -->
-            <li class="nav-item">
-              <a class="nav-link" href="#">CONTACT</a>
-            </li>
-          </ul>
-        </div>
+          <!-- Contact -->
+          <li class="nav-item">
+            <a class="nav-link" href="#">CONTACT</a>
+          </li>
+        </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-
-   
-  </div>
-</div>
- 
-
-  <!--banner-->
-  <!-- Container for the content -->
-  <div class="banner-content inner-banner text-center">
+  <!-- Page Header -->
+  <section class="page-header text-center" style="padding: 20px 0; margin-bottom: 20px;">
     <div class="container">
-        
-
-
-      <div class="row align-items-center justify-content-between">
-        <!-- Left side: Text content -->
-     
-          <h1>Shop For MEN</h1>
-       
-        
-       
-    </div>
-  </div>
-</div>
-  <!--product-->
-  <div class="container mt-5">
-    <div class="row">
-      <div class="col-md-4">
-        <div class="product-pd-card mx-auto">
-          <div class="p-0">
-            <div class="d-flex card-horizontal">
-
-              <!-- LEFT: image -->
-              <div class="img-wrap d-flex ">
-                <div class="img-outer">
-                  <!-- use the provided image path -->
-                  <img src="imgs/shop-men.png" alt="Hoodie" class="product-image">
-                </div>
-              </div>
-
-              <!-- RIGHT: content -->
-              <div class="flex-grow-1 p-3">
-                <div class="d-flex justify-content-between align-items-start">
-                  <div>
-                    <div class="title">H&amp;M Men's Loose Fit Hoodie</div>
-                    <div class="subtitle">41 reviews</div>
-                  </div>
-                  <!-- small badge or rating area could go here -->
-                </div>
-
-                <div class="stars">
-                  <!-- 5 filled stars (SVG) -->
-                  <svg viewBox="0 0 20 20" fill="#f6c84c" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M10 1.6l2.2 4.46 4.92.72-3.56 3.47.84 4.89L10 13.9 5.58 15.14l.84-4.89L2.86 6.78l4.92-.72L10 1.6z" />
-                  </svg>
-                  <svg viewBox="0 0 20 20" fill="#f6c84c" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M10 1.6l2.2 4.46 4.92.72-3.56 3.47.84 4.89L10 13.9 5.58 15.14l.84-4.89L2.86 6.78l4.92-.72L10 1.6z" />
-                  </svg>
-                  <svg viewBox="0 0 20 20" fill="#f6c84c" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M10 1.6l2.2 4.46 4.92.72-3.56 3.47.84 4.89L10 13.9 5.58 15.14l.84-4.89L2.86 6.78l4.92-.72L10 1.6z" />
-                  </svg>
-                  <svg viewBox="0 0 20 20" fill="#f6c84c" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M10 1.6l2.2 4.46 4.92.72-3.56 3.47.84 4.89L10 13.9 5.58 15.14l.84-4.89L2.86 6.78l4.92-.72L10 1.6z" />
-                  </svg>
-                  <svg viewBox="0 0 20 20" fill="#f6c84c" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M10 1.6l2.2 4.46 4.92.72-3.56 3.47.84 4.89L10 13.9 5.58 15.14l.84-4.89L2.86 6.78l4.92-.72L10 1.6z" />
-                  </svg>
-
-                </div>
-
-
-              </div>
-            </div>
-            <div class="d-flex justify-content-between mt-2">
-              <div class="price-row align-self-start">
-                <div class="price">Price : <span style="color:#111;">1999 ₹</span></div>
-              </div>
-
-              <div class="ms-3 d-flex align-items-start">
-                <div style="font-size:.9rem; color:var(--muted); margin-right:.5rem;">Colors:</div>
-                <div class="colors">
-                  <span class="dot" style="background:#ff7a7a"></span>
-                  <span class="dot" style="background:#ffcc00"></span>
-                  <span class="dot" style="background:#1e90ff"></span>
-                  <span class="dot" style="background:#00c853"></span>
-                </div>
-              </div>
-            </div>
-
-            <p class="desc">
-              Suspendisse quos? Tempus cras iure temporibus? Eu laudantium cubilia sem sem! Repudiandae et! Massa
-              senectus enim minim sociosqu delectus posuere.
-            </p>
-          </div>
-        </div>
-
-      </div>
-      <div class="col-md-4">
-        <div class="product-pd-card mx-auto">
-          <div class="p-0">
-            <div class="d-flex card-horizontal">
-
-              <!-- LEFT: image -->
-              <div class="img-wrap d-flex ">
-                <div class="img-outer">
-                  <!-- use the provided image path -->
-                  <img src="imgs/shop-men.png" alt="Hoodie" class="product-image">
-                </div>
-              </div>
-
-              <!-- RIGHT: content -->
-              <div class="flex-grow-1 p-3">
-                <div class="d-flex justify-content-between align-items-start">
-                  <div>
-                    <div class="title">H&amp;M Men's Loose Fit Hoodie</div>
-                    <div class="subtitle">41 reviews</div>
-                  </div>
-                  <!-- small badge or rating area could go here -->
-                </div>
-
-                <div class="stars">
-                  <!-- 5 filled stars (SVG) -->
-                  <svg viewBox="0 0 20 20" fill="#f6c84c" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M10 1.6l2.2 4.46 4.92.72-3.56 3.47.84 4.89L10 13.9 5.58 15.14l.84-4.89L2.86 6.78l4.92-.72L10 1.6z" />
-                  </svg>
-                  <svg viewBox="0 0 20 20" fill="#f6c84c" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M10 1.6l2.2 4.46 4.92.72-3.56 3.47.84 4.89L10 13.9 5.58 15.14l.84-4.89L2.86 6.78l4.92-.72L10 1.6z" />
-                  </svg>
-                  <svg viewBox="0 0 20 20" fill="#f6c84c" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M10 1.6l2.2 4.46 4.92.72-3.56 3.47.84 4.89L10 13.9 5.58 15.14l.84-4.89L2.86 6.78l4.92-.72L10 1.6z" />
-                  </svg>
-                  <svg viewBox="0 0 20 20" fill="#f6c84c" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M10 1.6l2.2 4.46 4.92.72-3.56 3.47.84 4.89L10 13.9 5.58 15.14l.84-4.89L2.86 6.78l4.92-.72L10 1.6z" />
-                  </svg>
-                  <svg viewBox="0 0 20 20" fill="#f6c84c" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M10 1.6l2.2 4.46 4.92.72-3.56 3.47.84 4.89L10 13.9 5.58 15.14l.84-4.89L2.86 6.78l4.92-.72L10 1.6z" />
-                  </svg>
-
-                </div>
-
-
-              </div>
-            </div>
-            <div class="d-flex justify-content-between mt-2">
-              <div class="price-row align-self-start">
-                <div class="price">Price : <span style="color:#111;">1999 ₹</span></div>
-              </div>
-
-              <div class="ms-3 d-flex align-items-start">
-                <div style="font-size:.9rem; color:var(--muted); margin-right:.5rem;">Colors:</div>
-                <div class="colors">
-                  <span class="dot" style="background:#ff7a7a"></span>
-                  <span class="dot" style="background:#ffcc00"></span>
-                  <span class="dot" style="background:#1e90ff"></span>
-                  <span class="dot" style="background:#00c853"></span>
-                </div>
-              </div>
-            </div>
-
-            <p class="desc">
-              Suspendisse quos? Tempus cras iure temporibus? Eu laudantium cubilia sem sem! Repudiandae et! Massa
-              senectus enim minim sociosqu delectus posuere.
-            </p>
-          </div>
-        </div>
-
-      </div>
-      <div class="col-md-4">
-        <div class="product-pd-card mx-auto">
-          <div class="p-0">
-            <div class="d-flex card-horizontal">
-
-              <!-- LEFT: image -->
-              <div class="img-wrap d-flex ">
-                <div class="img-outer">
-                  <!-- use the provided image path -->
-                  <img src="imgs/shop-men.png" alt="Hoodie" class="product-image">
-                </div>
-              </div>
-
-              <!-- RIGHT: content -->
-              <div class="flex-grow-1 p-3">
-                <div class="d-flex justify-content-between align-items-start">
-                  <div>
-                    <div class="title">H&amp;M Men's Loose Fit Hoodie</div>
-                    <div class="subtitle">41 reviews</div>
-                  </div>
-                  <!-- small badge or rating area could go here -->
-                </div>
-
-                <div class="stars">
-                  <!-- 5 filled stars (SVG) -->
-                  <svg viewBox="0 0 20 20" fill="#f6c84c" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M10 1.6l2.2 4.46 4.92.72-3.56 3.47.84 4.89L10 13.9 5.58 15.14l.84-4.89L2.86 6.78l4.92-.72L10 1.6z" />
-                  </svg>
-                  <svg viewBox="0 0 20 20" fill="#f6c84c" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M10 1.6l2.2 4.46 4.92.72-3.56 3.47.84 4.89L10 13.9 5.58 15.14l.84-4.89L2.86 6.78l4.92-.72L10 1.6z" />
-                  </svg>
-                  <svg viewBox="0 0 20 20" fill="#f6c84c" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M10 1.6l2.2 4.46 4.92.72-3.56 3.47.84 4.89L10 13.9 5.58 15.14l.84-4.89L2.86 6.78l4.92-.72L10 1.6z" />
-                  </svg>
-                  <svg viewBox="0 0 20 20" fill="#f6c84c" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M10 1.6l2.2 4.46 4.92.72-3.56 3.47.84 4.89L10 13.9 5.58 15.14l.84-4.89L2.86 6.78l4.92-.72L10 1.6z" />
-                  </svg>
-                  <svg viewBox="0 0 20 20" fill="#f6c84c" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M10 1.6l2.2 4.46 4.92.72-3.56 3.47.84 4.89L10 13.9 5.58 15.14l.84-4.89L2.86 6.78l4.92-.72L10 1.6z" />
-                  </svg>
-
-                </div>
-
-
-              </div>
-            </div>
-            <div class="d-flex justify-content-between mt-2">
-              <div class="price-row align-self-start">
-                <div class="price">Price : <span style="color:#111;">1999 ₹</span></div>
-              </div>
-
-              <div class="ms-3 d-flex align-items-start">
-                <div style="font-size:.9rem; color:var(--muted); margin-right:.5rem;">Colors:</div>
-                <div class="colors">
-                  <span class="dot" style="background:#ff7a7a"></span>
-                  <span class="dot" style="background:#ffcc00"></span>
-                  <span class="dot" style="background:#1e90ff"></span>
-                  <span class="dot" style="background:#00c853"></span>
-                </div>
-              </div>
-            </div>
-
-            <p class="desc">
-              Suspendisse quos? Tempus cras iure temporibus? Eu laudantium cubilia sem sem! Repudiandae et! Massa
-              senectus enim minim sociosqu delectus posuere.
-            </p>
-          </div>
-        </div>
-
-      </div>
-    </div>
- 
-  </div>
-
-
-  <section class="best-sellers mt-5">
-    <div class="container">
-      <!-- Title -->
-      <h2 class="section-title display-6 text-start text-dark" style="font-size:32px;">
-        BEST SELLERS
-      </h2>
-       <div class="row">
-      <div class="col-md-4">
-        <div class="product-pd-card mx-auto">
-          <div class="p-0">
-            <div class="d-flex card-horizontal">
-
-              <!-- LEFT: image -->
-              <div class="img-wrap d-flex ">
-                <div class="img-outer">
-                  <!-- use the provided image path -->
-                  <img src="imgs/shop-men.png" alt="Hoodie" class="product-image">
-                </div>
-              </div>
-
-              <!-- RIGHT: content -->
-              <div class="flex-grow-1 p-3">
-                <div class="d-flex justify-content-between align-items-start">
-                  <div>
-                    <div class="title">H&amp;M Men's Loose Fit Hoodie</div>
-                    <div class="subtitle">41 reviews</div>
-                  </div>
-                  <!-- small badge or rating area could go here -->
-                </div>
-
-                <div class="stars">
-                  <!-- 5 filled stars (SVG) -->
-                  <svg viewBox="0 0 20 20" fill="#f6c84c" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M10 1.6l2.2 4.46 4.92.72-3.56 3.47.84 4.89L10 13.9 5.58 15.14l.84-4.89L2.86 6.78l4.92-.72L10 1.6z" />
-                  </svg>
-                  <svg viewBox="0 0 20 20" fill="#f6c84c" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M10 1.6l2.2 4.46 4.92.72-3.56 3.47.84 4.89L10 13.9 5.58 15.14l.84-4.89L2.86 6.78l4.92-.72L10 1.6z" />
-                  </svg>
-                  <svg viewBox="0 0 20 20" fill="#f6c84c" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M10 1.6l2.2 4.46 4.92.72-3.56 3.47.84 4.89L10 13.9 5.58 15.14l.84-4.89L2.86 6.78l4.92-.72L10 1.6z" />
-                  </svg>
-                  <svg viewBox="0 0 20 20" fill="#f6c84c" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M10 1.6l2.2 4.46 4.92.72-3.56 3.47.84 4.89L10 13.9 5.58 15.14l.84-4.89L2.86 6.78l4.92-.72L10 1.6z" />
-                  </svg>
-                  <svg viewBox="0 0 20 20" fill="#f6c84c" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M10 1.6l2.2 4.46 4.92.72-3.56 3.47.84 4.89L10 13.9 5.58 15.14l.84-4.89L2.86 6.78l4.92-.72L10 1.6z" />
-                  </svg>
-
-                </div>
-
-
-              </div>
-            </div>
-            <div class="d-flex justify-content-between mt-2">
-              <div class="price-row align-self-start">
-                <div class="price">Price : <span style="color:#111;">1999 ₹</span></div>
-              </div>
-
-              <div class="ms-3 d-flex align-items-start">
-                <div style="font-size:.9rem; color:var(--muted); margin-right:.5rem;">Colors:</div>
-                <div class="colors">
-                  <span class="dot" style="background:#ff7a7a"></span>
-                  <span class="dot" style="background:#ffcc00"></span>
-                  <span class="dot" style="background:#1e90ff"></span>
-                  <span class="dot" style="background:#00c853"></span>
-                </div>
-              </div>
-            </div>
-
-            <p class="desc">
-              Suspendisse quos? Tempus cras iure temporibus? Eu laudantium cubilia sem sem! Repudiandae et! Massa
-              senectus enim minim sociosqu delectus posuere.
-            </p>
-          </div>
-        </div>
-
-      </div>
-      <div class="col-md-4">
-        <div class="product-pd-card mx-auto">
-          <div class="p-0">
-            <div class="d-flex card-horizontal">
-
-              <!-- LEFT: image -->
-              <div class="img-wrap d-flex ">
-                <div class="img-outer">
-                  <!-- use the provided image path -->
-                  <img src="imgs/shop-men.png" alt="Hoodie" class="product-image">
-                </div>
-              </div>
-
-              <!-- RIGHT: content -->
-              <div class="flex-grow-1 p-3">
-                <div class="d-flex justify-content-between align-items-start">
-                  <div>
-                    <div class="title">H&amp;M Men's Loose Fit Hoodie</div>
-                    <div class="subtitle">41 reviews</div>
-                  </div>
-                  <!-- small badge or rating area could go here -->
-                </div>
-
-                <div class="stars">
-                  <!-- 5 filled stars (SVG) -->
-                  <svg viewBox="0 0 20 20" fill="#f6c84c" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M10 1.6l2.2 4.46 4.92.72-3.56 3.47.84 4.89L10 13.9 5.58 15.14l.84-4.89L2.86 6.78l4.92-.72L10 1.6z" />
-                  </svg>
-                  <svg viewBox="0 0 20 20" fill="#f6c84c" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M10 1.6l2.2 4.46 4.92.72-3.56 3.47.84 4.89L10 13.9 5.58 15.14l.84-4.89L2.86 6.78l4.92-.72L10 1.6z" />
-                  </svg>
-                  <svg viewBox="0 0 20 20" fill="#f6c84c" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M10 1.6l2.2 4.46 4.92.72-3.56 3.47.84 4.89L10 13.9 5.58 15.14l.84-4.89L2.86 6.78l4.92-.72L10 1.6z" />
-                  </svg>
-                  <svg viewBox="0 0 20 20" fill="#f6c84c" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M10 1.6l2.2 4.46 4.92.72-3.56 3.47.84 4.89L10 13.9 5.58 15.14l.84-4.89L2.86 6.78l4.92-.72L10 1.6z" />
-                  </svg>
-                  <svg viewBox="0 0 20 20" fill="#f6c84c" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M10 1.6l2.2 4.46 4.92.72-3.56 3.47.84 4.89L10 13.9 5.58 15.14l.84-4.89L2.86 6.78l4.92-.72L10 1.6z" />
-                  </svg>
-
-                </div>
-
-
-              </div>
-            </div>
-            <div class="d-flex justify-content-between mt-2">
-              <div class="price-row align-self-start">
-                <div class="price">Price : <span style="color:#111;">1999 ₹</span></div>
-              </div>
-
-              <div class="ms-3 d-flex align-items-start">
-                <div style="font-size:.9rem; color:var(--muted); margin-right:.5rem;">Colors:</div>
-                <div class="colors">
-                  <span class="dot" style="background:#ff7a7a"></span>
-                  <span class="dot" style="background:#ffcc00"></span>
-                  <span class="dot" style="background:#1e90ff"></span>
-                  <span class="dot" style="background:#00c853"></span>
-                </div>
-              </div>
-            </div>
-
-            <p class="desc">
-              Suspendisse quos? Tempus cras iure temporibus? Eu laudantium cubilia sem sem! Repudiandae et! Massa
-              senectus enim minim sociosqu delectus posuere.
-            </p>
-          </div>
-        </div>
-
-      </div>
-      <div class="col-md-4">
-        <div class="product-pd-card mx-auto">
-          <div class="p-0">
-            <div class="d-flex card-horizontal">
-
-              <!-- LEFT: image -->
-              <div class="img-wrap d-flex ">
-                <div class="img-outer">
-                  <!-- use the provided image path -->
-                  <img src="imgs/shop-men.png" alt="Hoodie" class="product-image">
-                </div>
-              </div>
-
-              <!-- RIGHT: content -->
-              <div class="flex-grow-1 p-3">
-                <div class="d-flex justify-content-between align-items-start">
-                  <div>
-                    <div class="title">H&amp;M Men's Loose Fit Hoodie</div>
-                    <div class="subtitle">41 reviews</div>
-                  </div>
-                  <!-- small badge or rating area could go here -->
-                </div>
-
-                <div class="stars">
-                  <!-- 5 filled stars (SVG) -->
-                  <svg viewBox="0 0 20 20" fill="#f6c84c" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M10 1.6l2.2 4.46 4.92.72-3.56 3.47.84 4.89L10 13.9 5.58 15.14l.84-4.89L2.86 6.78l4.92-.72L10 1.6z" />
-                  </svg>
-                  <svg viewBox="0 0 20 20" fill="#f6c84c" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M10 1.6l2.2 4.46 4.92.72-3.56 3.47.84 4.89L10 13.9 5.58 15.14l.84-4.89L2.86 6.78l4.92-.72L10 1.6z" />
-                  </svg>
-                  <svg viewBox="0 0 20 20" fill="#f6c84c" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M10 1.6l2.2 4.46 4.92.72-3.56 3.47.84 4.89L10 13.9 5.58 15.14l.84-4.89L2.86 6.78l4.92-.72L10 1.6z" />
-                  </svg>
-                  <svg viewBox="0 0 20 20" fill="#f6c84c" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M10 1.6l2.2 4.46 4.92.72-3.56 3.47.84 4.89L10 13.9 5.58 15.14l.84-4.89L2.86 6.78l4.92-.72L10 1.6z" />
-                  </svg>
-                  <svg viewBox="0 0 20 20" fill="#f6c84c" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M10 1.6l2.2 4.46 4.92.72-3.56 3.47.84 4.89L10 13.9 5.58 15.14l.84-4.89L2.86 6.78l4.92-.72L10 1.6z" />
-                  </svg>
-
-                </div>
-
-
-              </div>
-            </div>
-            <div class="d-flex justify-content-between mt-2">
-              <div class="price-row align-self-start">
-                <div class="price">Price : <span style="color:#111;">1999 ₹</span></div>
-              </div>
-
-              <div class="ms-3 d-flex align-items-start">
-                <div style="font-size:.9rem; color:var(--muted); margin-right:.5rem;">Colors:</div>
-                <div class="colors">
-                  <span class="dot" style="background:#ff7a7a"></span>
-                  <span class="dot" style="background:#ffcc00"></span>
-                  <span class="dot" style="background:#1e90ff"></span>
-                  <span class="dot" style="background:#00c853"></span>
-                </div>
-              </div>
-            </div>
-
-            <p class="desc">
-              Suspendisse quos? Tempus cras iure temporibus? Eu laudantium cubilia sem sem! Repudiandae et! Massa
-              senectus enim minim sociosqu delectus posuere.
-            </p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-     
+      <h1>For Him</h1>
     </div>
   </section>
 
-  <section class="py-5">
+  <!-- Main Content Area -->
+  <section class="container mb-5">
+    <div class="row">
+      <!-- Sidebar Filters -->
+      <div class="col-lg-3 mb-4 mb-lg-0">
+        <div class="filter-sidebar">
+
+          <!-- Category Filter -->
+          <div class="filter-section">
+            <h5 class="filter-title">Categories</h5>
+            <ul class="filter-list">
+              <li>
+                <label class="custom-checkbox">
+                  <input type="checkbox" checked> All Products
+                </label>
+              </li>
+              <li>
+                <label class="custom-checkbox">
+                  <input type="checkbox"> T-Shirts
+                </label>
+              </li>
+              <li>
+                <label class="custom-checkbox">
+                  <input type="checkbox"> Hoodies
+                </label>
+              </li>
+              <li>
+                <label class="custom-checkbox">
+                  <input type="checkbox"> Mugs
+                </label>
+              </li>
+              <li>
+                <label class="custom-checkbox">
+                  <input type="checkbox"> Accessories
+                </label>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Price Filter -->
+          <div class="filter-section">
+            <h5 class="filter-title">Price Range</h5>
+            <div class="price-range-inputs mb-3">
+              <input type="number" class="form-control form-control-sm" placeholder="Min" value="0">
+              <span class="text-muted">-</span>
+              <input type="number" class="form-control form-control-sm" placeholder="Max" value="5000">
+            </div>
+            <button class="btn btn-sm btn-dark w-100 rounded-pill">Apply</button>
+          </div>
+
+          <!-- Color Filter -->
+          <div class="filter-section">
+            <h5 class="filter-title">Colors</h5>
+            <div class="d-flex flex-wrap gap-2">
+              <span class="dot"
+                style="background:#000; width:25px; height:25px; border-radius:50%; cursor:pointer; border:1px solid #eee;"></span>
+              <span class="dot"
+                style="background:#fff; width:25px; height:25px; border-radius:50%; cursor:pointer; border:1px solid #ccc;"></span>
+              <span class="dot"
+                style="background:#ff0000; width:25px; height:25px; border-radius:50%; cursor:pointer;"></span>
+              <span class="dot"
+                style="background:#0000ff; width:25px; height:25px; border-radius:50%; cursor:pointer;"></span>
+              <span class="dot"
+                style="background:#008000; width:25px; height:25px; border-radius:50%; cursor:pointer;"></span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Product Grid -->
+      <div class="col-lg-9">
+
+        <!-- Toolbar -->
+        <div class="d-flex justify-content-between align-items-center mb-4 pb-3 border-bottom">
+          <p class="mb-0 text-muted">Showing 1-9 of 24 results</p>
+          <div class="d-flex align-items-center">
+            <label class="me-2 text-muted small">Sort by:</label>
+            <select class="form-select form-select-sm" style="width: auto;">
+              <option>Newest Arrivals</option>
+              <option>Price: Low to High</option>
+              <option>Price: High to Low</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row g-4">
+
+          <!-- Product Card 1 -->
+          <div class="col-sm-6 col-md-4">
+            <div class="product-grid-card">
+              <div class="pg-image-wrap">
+                <a href="product-detail.html">
+                  <img src="imgs/shop-men.png" alt="T-Shirt">
+                </a>
+                <span class="product-badge">New</span>
+              </div>
+              <div class="pg-info">
+                <div class="pg-category">Apparel</div>
+                <h3 class="pg-title"><a href="product-detail.html" class="text-reset text-decoration-none">Men's Classic
+                    Cotton Tee</a></h3>
+                <div class="pg-price-row">
+                  <span class="pg-price">₹ 90</span> <!-- Updated Price -->
+                </div>
+                <button class="pg-add-cart-btn btn-secondary" disabled
+                  style="background-color: #94a3b8; cursor: not-allowed;">
+                  <i class="fas fa-ban"></i> Out of Stock
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product Card 2 -->
+          <div class="col-sm-6 col-md-4">
+            <div class="product-grid-card">
+              <div class="pg-image-wrap">
+                <a href="product-detail.html">
+                  <img src="imgs/shop-men.png" alt="Hoodie"> <!-- Reuse img for demo -->
+                </a>
+              </div>
+              <div class="pg-info">
+                <div class="pg-category">Winter Wear</div>
+                <h3 class="pg-title"><a href="product-detail.html" class="text-reset text-decoration-none">Premium
+                    Fleece Hoodie</a></h3>
+                <div class="pg-price-row">
+                  <div class="pg-price">$55.00</div>
+                </div>
+                <button class="pg-add-cart-btn">
+                  <i class="fas fa-shopping-cart"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product Card 3 -->
+          <div class="col-sm-6 col-md-4">
+            <div class="product-grid-card">
+              <div class="pg-image-wrap">
+                <a href="product-detail.html">
+                  <img src="imgs/shop-men.png" alt="Mug">
+                </a>
+                <span class="product-badge bg-danger">-20%</span>
+              </div>
+              <div class="pg-info">
+                <div class="pg-category">Accessories</div>
+                <h3 class="pg-title"><a href="product-detail.html" class="text-reset text-decoration-none">Personalized
+                    Coffee Mug</a></h3>
+                <div class="pg-price-row">
+                  <div class="pg-price">$16.00 <span class="old-price">$20.00</span></div>
+                </div>
+                <button class="pg-add-cart-btn">
+                  <i class="fas fa-shopping-cart"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product Card 4 -->
+          <div class="col-sm-6 col-md-4">
+            <div class="product-grid-card">
+              <div class="pg-image-wrap">
+                <a href="product-detail.html">
+                  <img src="imgs/shop-men.png" alt="Canvas">
+                </a>
+              </div>
+              <div class="pg-info">
+                <div class="pg-category">Home Decor</div>
+                <h3 class="pg-title"><a href="product-detail.html" class="text-reset text-decoration-none">Abstract Wall
+                    Note - Art Frame</a></h3>
+                <div class="pg-price-row">
+                  <div class="pg-price">$89.00</div>
+                </div>
+                <button class="pg-add-cart-btn">
+                  <i class="fas fa-shopping-cart"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product Card 5 -->
+          <div class="col-sm-6 col-md-4">
+            <div class="product-grid-card">
+              <div class="pg-image-wrap">
+                <a href="product-detail.html">
+                  <img src="imgs/shop-men.png" alt="Cap">
+                </a>
+              </div>
+              <div class="pg-info">
+                <div class="pg-category">Accessories</div>
+                <h3 class="pg-title"><a href="product-detail.html" class="text-reset text-decoration-none">Embroidered
+                    Baseball Cap</a></h3>
+                <div class="pg-price-row">
+                  <div class="pg-price">$22.00</div>
+                </div>
+                <button class="pg-add-cart-btn">
+                  <i class="fas fa-shopping-cart"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product Card 6 -->
+          <div class="col-sm-6 col-md-4">
+            <div class="product-grid-card">
+              <div class="pg-image-wrap">
+                <a href="product-detail.html">
+                  <img src="imgs/shop-men.png" alt="Bag">
+                </a>
+              </div>
+              <div class="pg-info">
+                <div class="pg-category">Bags</div>
+                <h3 class="pg-title"><a href="product-detail.html" class="text-reset text-decoration-none">Eco-Friendly
+                    Tote Bag</a></h3>
+                <div class="pg-price-row">
+                  <div class="pg-price">$15.00</div>
+                </div>
+                <button class="pg-add-cart-btn">
+                  <i class="fas fa-shopping-cart"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Pagination -->
+        <div class="mt-5 d-flex justify-content-center">
+          <nav aria-label="Page navigation">
+            <ul class="pagination">
+              <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1">Previous</a>
+              </li>
+              <li class="page-item active"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section (Reusing) -->
+  <section class="features-section py-5 bg-light">
     <div class="container">
       <div class="row g-4 justify-content-center">
-
-        <!-- Free Shipping -->
-        <div class="col-10 col-sm-6 col-md-3">
-          <div class="service-card">
-            <img src="imgs/free-delivery.png">
-            <h6 class="service-title">Free Shipping</h6>
-            <p class="service-text">Free on order over Rs 300</p>
+        <div class="col-sm-6 col-md-3">
+          <div class="feature-item">
+            <div class="feature-icon"><i class="fas fa-shipping-fast"></i></div>
+            <h5>Free Shipping</h5>
+            <p class="text-muted small">On all orders over $50</p>
           </div>
         </div>
-
-        <!-- Security Payment -->
-        <div class="col-10 col-sm-6 col-md-3">
-          <div class="service-card">
-            <img src="imgs/credit-card.png">
-            <h6 class="service-title">Security Payment</h6>
-            <p class="service-text">100% security payment</p>
+        <div class="col-sm-6 col-md-3">
+          <div class="feature-item">
+            <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+            <h5>Secure Payment</h5>
+            <p class="text-muted small">100% secure payment</p>
           </div>
         </div>
-
-        <!-- 30 Day Return -->
-        <div class="col-10 col-sm-6 col-md-3">
-          <div class="service-card">
-            <img src="imgs/return-box.png">
-            <h6 class="service-title">30 Day Return</h6>
-            <p class="service-text">30 day money guarantee</p>
+        <div class="col-sm-6 col-md-3">
+          <div class="feature-item">
+            <div class="feature-icon"><i class="fas fa-undo"></i></div>
+            <h5>30 Day Returns</h5>
+            <p class="text-muted small">Money back guarantee</p>
           </div>
         </div>
-
-        <!-- 24/7 Support -->
-        <div class="col-10 col-sm-6 col-md-3">
-          <div class="service-card">
-            <img src="imgs/support.png">
-            <h6 class="service-title">24/7 Support</h6>
-            <p class="service-text">Support every time fast</p>
+        <div class="col-sm-6 col-md-3">
+          <div class="feature-item">
+            <div class="feature-icon"><i class="fas fa-headset"></i></div>
+            <h5>24/7 Support</h5>
+            <p class="text-muted small">Dedicated support</p>
           </div>
         </div>
-
       </div>
     </div>
   </section>
@@ -662,91 +408,76 @@
 
   <footer class="footer">
     <div class="container">
-      <div class="row align-items-start">
-        <!-- Logo Column -->
-        <div class="col-md-3 text-center text-md-start mb-3">
-          <img src="imgs/logo.png" alt="Print on Love Logo">
-
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-logo">
+            <img src="imgs/logo.png" alt="Logo" style="height: 60px;">
+          </div>
+          <p class="text-white-50 small pe-lg-5">Print on Love brings you the finest custom-printed gifts. From
+            heartfelt mugs to personalized apparel, we turn your memories into keepsakes.</p>
+          <div class="social-links">
+            <a href="#" class="social-btn"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-btn"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-btn"><i class="fab fa-pinterest"></i></a>
+          </div>
         </div>
 
-        <!-- Customer Service -->
-        <div class="col-md-3 mb-3">
-          <h5 class="footer-heading">Customer Service</h5>
-          <ul class="list-unstyled">
+        <div class="col-lg-2 col-md-6">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled footer-links">
+            <li><a href="#">About Us</a></li>
             <li><a href="#">Contact Us</a></li>
-            <li><a href="#">Returns</a></li>
-            <li><a href="#">Order History</a></li>
-            <li><a href="#">My Account</a></li>
-            <li><a href="#">Unsubscribe Notification</a></li>
-          </ul>
-        </div>
-
-        <!-- Information -->
-        <div class="col-md-3 mb-3">
-          <h5 class="footer-heading">Information</h5>
-          <ul class="list-unstyled">
-            <li><a href="#">Delivery Information</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms & Conditions</a></li>
-            <li><a href="#">Warranty</a></li>
             <li><a href="#">FAQ</a></li>
-            <li><a href="#">Seller Login</a></li>
+            <li><a href="#">Privacy Policy</a></li>
           </ul>
         </div>
 
-        <!-- Extras -->
-        <div class="col-md-3 mb-3">
-          <h5 class="footer-heading">Extras</h5>
-          <ul class="list-unstyled">
-            <li><a href="#">Gift Vouchers</a></li>
-            <li><a href="#">Wishlist</a></li>
-            <li><a href="#">Order History</a></li>
-            <li><a href="#">Track Your Order</a></li>
+        <div class="col-lg-2 col-md-6">
+          <h5>Shop</h5>
+          <ul class="list-unstyled footer-links">
+            <li><a href="#">For Him</a></li>
+            <li><a href="#">For Her</a></li>
+            <li><a href="#">Accessories</a></li>
+            <li><a href="#">New Arrivals</a></li>
           </ul>
         </div>
-      </div>
-      <div class="row justify-content-between align-items-center">
-      
-      <!-- Email Signup -->
-      <div class="col-md-6 col-lg-4">
-        <div class="email-input">
-          <input type="email" placeholder="Your Email">
-          <button>SignUP</button>
+
+        <div class="col-lg-4 col-md-6">
+          <h5>Newsletter</h5>
+          <p class="text-white-50 small">Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.
+          </p>
+          <div class="newsletter-box">
+            <input type="email" class="newsletter-input" placeholder="Enter your email">
+            <button class="newsletter-btn"><i class="fas fa-paper-plane"></i></button>
+          </div>
         </div>
       </div>
-
-      <!-- Social Icons -->
-      <div class="col-md-6 col-lg-8 text-end social-icons">
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-whatsapp"></i></a>
+      <div class="border-top border-secondary mt-5 pt-4 text-center text-white-50 small">
+        <p>&copy; 2024 Print on Love. All rights reserved.</p>
       </div>
-
-    </div>
-
     </div>
   </footer>
 
 
   <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
 
   <!-- Bootstrap JS -->

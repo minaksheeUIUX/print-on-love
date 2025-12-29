@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Print on Love | Order Details</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Google Font: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+        :root {
+            /* Brand Colors */
+            --primary-color: #e11d48;
+            /* Deep Rose */
+            --secondary-color: #fda4af;
+            /* Soft Pink */
+            --accent-color: #ffe4e6;
+            /* Very Light Pink */
+            --dark-color: #1e293b;
+            /* Slate 800 */
+            --light-gray: #f8fafc;
+            /* Slate 50 */
+            --text-color: #334155;
+            /* Slate 700 */
+            --white: #ffffff;
+
+            /* Functional */
+            --border-radius: 16px;
+            --shadow-sm: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+            --shadow-md: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+            --shadow-lg: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--text-color);
+            background-color: var(--white);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: var(--dark-color);
+            font-weight: 700;
+        }
+
+        a {
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+
+        .btn-primary-custom {
+            background: var(--primary-color);
+            color: white;
+            padding: 14px 32px;
+            border-radius: 50px;
+            border: none;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            box-shadow: 0 10px 25px rgba(225, 29, 72, 0.3);
+            transition: var(--transition);
+        }
+
+        .btn-primary-custom:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 35px rgba(225, 29, 72, 0.4);
+            background: #be123c;
+            color: white;
+        }
+
+        .hero-image-wrapper {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-image-wrapper::before {
+            content: '';
+            position: absolute;
+            top: -20px;
+            right: -20px;
+            width: 100%;
+            height: 100%;
+            background: var(--secondary-color);
+            border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+            z-index: -1;
+            opacity: 0.2;
+            animation: blob 10s infinite;
+        }
+
+        @keyframes blob {
+            0% {
+                border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+            }
+
+            50% {
+                border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+            }
+
+            100% {
+                border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+            }
+        }
+
+        .page-header {
+            background: linear-gradient(135deg, #fff0f3 0%, #fff5f7 100%);
+            padding: 10px 0;
+            margin-bottom: 40px;
+            border-bottom: 1px solid #ffe4e6;
+        }
+
+        .order-item-img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 12px;
+            background-color: #f1f5f9;
+        }
+
+        .print-preview-img {
+            max-width: 80%;
+            border-radius: 12px;
+            box-shadow: var(--shadow-sm);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container text-center py-4">
+        <a href="index.html">
+            <img src="imgs/logo.png" alt="Logo" style="max-height: 80px;">
+        </a>
+        <p class="mt-2 fs-5 text-muted fst-italic">We Print What The Heart Feels.</p>
+    </div>
+
+    <!-- Page Header -->
+    <section class="page-header text-center">
+        <div class="container">
+            <h1>Order Details</h1>
+
+        </div>
+    </section>
+
+    <!-- Order Details Content -->
+    <section class="container pb-5">
+
+        <!-- Header Card -->
+        <div class="card order-header-card border-0 shadow-sm rounded-4 mb-4">
+            <div class="card-body p-4 d-flex flex-wrap justify-content-between align-items-center gap-3">
+                <div>
+                    <h4 class="mb-1 text-dark">Order #1111</h4>
+                    <div class="d-flex align-items-center gap-2">
+                        <span class="text-muted">Status:</span>
+                        <span class="badge status-pending"><i class="fas fa-clock me-1"></i> Pending</span>
+                    </div>
+                </div>
+                <div>
+                    <button class="btn btn-primary-custom shadow-sm"><i class="fas fa-truck me-2"></i> Track Your
+                        Order</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-4">
+            <!-- Main Column: All details stacked -->
+            <div class="col-12">
+
+                <!-- Items Card -->
+                <div class="card border-0 shadow-sm rounded-4 mb-4">
+                    <div class="card-header bg-white border-bottom border-light p-4">
+                        <h5 class="mb-0">Items Ordered</h5>
+                    </div>
+                    <div class="card-body p-0">
+                        <!-- Item 1 -->
+                        <div class="p-4 border-bottom border-light">
+                            <div class="d-flex gap-4">
+                                <img src="imgs/shop-men.png" alt="Product" class="order-item-img">
+                                <div class="flex-grow-1">
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <h6 class="mb-0 fw-bold">Petit Boat Sweatshirt - Custom Name</h6>
+                                        <span class="text-primary fw-bold">Rs. 50.00</span>
+                                    </div>
+                                    <p class="mb-1 text-muted small">Qty: 1</p>
+                                    <p class="mb-0 text-muted small">Size: M</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Item 2 -->
+                        <div class="p-4">
+                            <div class="d-flex gap-4">
+                                <img src="imgs/shop-men.png" alt="Product" class="order-item-img">
+                                <div class="flex-grow-1">
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <h6 class="mb-0 fw-bold">Petit Boat Sweatshirt - Custom Name</h6>
+                                        <span class="text-primary fw-bold">Rs. 50.00</span>
+                                    </div>
+                                    <p class="mb-1 text-muted small">Qty: 1</p>
+                                    <p class="mb-0 text-muted small">Size: L</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Customization Details -->
+                <div class="card customization-card rounded-4 mb-4 shadow-sm border-0">
+                    <div class="card-body p-4">
+                        <h5 class="mb-4 text-primary"><i class="fas fa-magic me-2"></i> Customization Details</h5>
+                        <div class="row g-4">
+                            <div class="col-md-4">
+                                <label class="form-label text-muted small fw-bold text-uppercase">Print Image
+                                    Preview</label>
+                                <div class="bg-light p-2 rounded-3 text-center">
+                                    <img src="imgs/shop-men.png" alt="Print Preview" class="print-preview-img">
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <label class="form-label text-muted small fw-bold text-uppercase">Your Message</label>
+                                <div class="p-3 bg-light rounded-3 text-dark fst-italic border border-light">
+                                    "Lorem ipsum dumy Lorem ipsum dumy Lorem ipsum dumy Lorem ipsum dumy"
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Order Summary -->
+                <div class="card border-0 shadow-sm rounded-4 mb-4">
+                    <div class="card-header bg-white border-bottom border-light p-4">
+                        <h5 class="mb-0">Order Summary</h5>
+                    </div>
+                    <div class="card-body p-4">
+                        <div class="d-flex justify-content-between mb-2">
+                            <span class="text-muted">Item Total</span>
+                            <span class="fw-medium">Rs. 50.00</span>
+                        </div>
+                        <div class="d-flex justify-content-between mb-3">
+                            <span class="text-muted">Shipping Charges</span>
+                            <span class="fw-medium">Rs. 50.00</span>
+                        </div>
+                        <hr class="text-muted opacity-25">
+                        <div class="d-flex justify-content-between mb-0">
+                            <span class="fw-bold fs-5">Total</span>
+                            <span class="fw-bold fs-5 text-primary">Rs. 100.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Shipping Address -->
+                <div class="card border-0 shadow-sm rounded-4">
+                    <div class="card-header bg-white border-bottom border-light p-4">
+                        <h5 class="mb-0">Shipping Address</h5>
+                    </div>
+                    <div class="card-body p-4">
+                        <div class="d-flex gap-3">
+                            <div class="text-primary mt-1"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <h6 class="fw-bold mb-1">Smiles Davis Dessler</h6>
+                                <p class="text-muted mb-0 small lh-base">
+                                    Unit 57 and 61-65<br>
+                                    Warwickshire, CV11DX<br>
+                                    United Kingdom
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

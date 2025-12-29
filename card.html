@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shopping Cart | Print on Love</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome for Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+  <!-- Google Font: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- custom css-->
+  <link href="style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="top-bar">
+    <div class="container-fluid px-5 d-flex justify-content-between align-items-center flex-wrap">
+
+      <!-- Left Side: Contact Info -->
+      <div class="d-flex align-items-center flex-wrap">
+        <div class="icon-text"><i class="fas fa-phone"></i>: +1 234 567 8900</div>
+        <div class="icon-text ms-2"><i class="fas fa-envelope"></i>: support@printonlove.com</div>
+      </div>
+
+      <!-- Center: Search Bar -->
+      <div class="d-flex justify-content-center my-2 my-lg-0 flex-grow-1 mx-lg-5">
+        <div class="input-group">
+          <input type="text" class="form-control search-bar" placeholder="Search">
+          <button class="btn search-btn" type="button">
+            <i class="fas fa-search text-white"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Right Side: Icons -->
+      <div class="d-flex align-items-center flex-wrap">
+        <div class="icon-text pe-1 pe-0"><i class="fas fa-user"></i>
+          <a href="login.html"> Login </a>/ <a href="#"> Sign in</a>
+        </div>
+        <div class="icon-text  pe-1 pe-0">
+          <a href="#"> <i class="fas fa-heart"></i> Wishlist</a>
+        </div>
+
+        <!-- Cart Icon with Badge -->
+        <div class="icon-text cart-icon  pe-1 pe-0">
+          <a href="#"> <i class="fas fa-shopping-cart"></i> Cart (2)</a>
+        </div>
+
+        <div class="icon-text">
+          <a href="#"> <i class="fas fa-truck"></i> Track Order</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+
+      <!-- Logo -->
+      <a class="navbar-brand text-center" href="index.html">
+        <img src="imgs/logo.png" alt="Logo">
+      </a>
+
+      <!-- Mobile toggle -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Nav Items -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav align-items-center">
+
+          <!-- Home -->
+          <li class="nav-item">
+            <a class="nav-link" href="index.html"><img src="imgs/home-icon.png" alt="Home"> Home</a>
+          </li>
+
+          <!-- Gift for Him -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="giftHimDropdown" role="button" data-bs-toggle="dropdown">
+              <img src="imgs/man-icon.png" alt="Gift for Him"> Gift for Him
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">T-Shirts</a></li>
+              <li><a class="dropdown-item" href="#">Mugs</a></li>
+            </ul>
+          </li>
+
+          <!-- Gift for Her -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="giftHerDropdown" role="button" data-bs-toggle="dropdown">
+              <img src="imgs/woman-icon.png" alt="Gift for Her"> Gift for Her
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Jewelry</a></li>
+              <li><a class="dropdown-item" href="#">Apparel</a></li>
+            </ul>
+          </li>
+
+          <!-- Contact -->
+          <li class="nav-item">
+            <a class="nav-link" href="#">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="page-header text-center">
+    <div class="container">
+      <h1>Shopping Cart</h1>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Cart</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+
+  <!-- Cart Section -->
+  <section class="container cart-section">
+    <div class="row g-5">
+      <!-- Left: Items -->
+      <div class="col-lg-8">
+
+        <!-- Header Row (Desktop) -->
+        <div class="cart-header-row row">
+          <div class="col-md-5">Product</div>
+          <div class="col-md-2 text-center">Price</div>
+          <div class="col-md-2 text-center">Quantity</div>
+          <div class="col-md-2 text-center">Total</div>
+          <div class="col-md-1"></div>
+        </div>
+
+        <!-- Item 1 -->
+        <div class="cart-item-row row">
+          <div class="col-md-5 d-flex align-items-center gap-3">
+            <div class="cart-img-wrap">
+              <img src="imgs/shop-men.png" alt="Product">
+            </div>
+            <div>
+              <a href="product-detail.html" class="cart-item-title">H&M Men's Loose Fit Hoodie</a>
+              <div class="cart-item-meta">Color: Red | Size: M</div>
+            </div>
+          </div>
+          <div class="col-md-2 text-center">
+            <div class="cart-price">$29.00</div>
+          </div>
+          <div class="col-md-2 d-flex justify-content-center">
+            <div class="qty-control-cart">
+              <button class="qty-btn-cart">-</button>
+              <input type="text" value="1" class="qty-input-cart">
+              <button class="qty-btn-cart">+</button>
+            </div>
+          </div>
+          <div class="col-md-2 text-center">
+            <div class="cart-price text-primary">$29.00</div>
+          </div>
+          <div class="col-md-1 text-center">
+            <button class="remove-btn"><i class="fas fa-trash-alt"></i></button>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="cart-item-row row">
+          <div class="col-md-5 d-flex align-items-center gap-3">
+            <div class="cart-img-wrap">
+              <img src="imgs/best-seller-2.png" alt="Product">
+            </div>
+            <div>
+              <a href="product-detail.html" class="cart-item-title">Couple Matching Tees</a>
+              <div class="cart-item-meta">Color: White | Size: L</div>
+            </div>
+          </div>
+          <div class="col-md-2 text-center">
+            <div class="cart-price">$45.00</div>
+          </div>
+          <div class="col-md-2 d-flex justify-content-center">
+            <div class="qty-control-cart">
+              <button class="qty-btn-cart">-</button>
+              <input type="text" value="2" class="qty-input-cart">
+              <button class="qty-btn-cart">+</button>
+            </div>
+          </div>
+          <div class="col-md-2 text-center">
+            <div class="cart-price text-primary">$90.00</div>
+          </div>
+          <div class="col-md-1 text-center">
+            <button class="remove-btn"><i class="fas fa-trash-alt"></i></button>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-between mt-4">
+          <a href="category.html" class="btn btn-outline-secondary rounded-pill px-4"><i
+              class="fas fa-arrow-left me-2"></i> Continue Shopping</a>
+          <button class="btn btn-dark rounded-pill px-4">Update Cart</button>
+        </div>
+
+      </div>
+
+      <!-- Right: Summary -->
+      <div class="col-lg-4">
+        <div class="cart-summary-box">
+          <h4 class="cart-summary-title">Order Summary</h4>
+          <div class="summary-row">
+            <span>Subtotal</span>
+            <span class="fw-bold">$119.00</span>
+          </div>
+          <div class="summary-row">
+            <span>Shipping Estimate</span>
+            <span class="text-secondary">$10.00</span>
+          </div>
+          <div class="summary-row">
+            <span>Tax</span>
+            <span class="text-secondary">$5.00</span>
+          </div>
+          <div class="summary-row total">
+            <span>Total</span>
+            <span>$134.00</span>
+          </div>
+
+          <a href="checkout.html" class="confirm-btn d-block text-center text-decoration-none mt-4">
+            Proceed to Checkout
+          </a>
+
+          <div class="mt-4 text-center">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/PayPal.svg/2560px-PayPal.svg.png"
+              alt="Payments" style="height:25px; opacity:0.6;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related Products -->
+  <section class="container mb-5">
+    <h3 class="fw-bold mb-4 text-center">You Might Also Like</h3>
+    <div class="row g-4">
+      <div class="col-6 col-md-3">
+        <div class="product-grid-card">
+          <div class="pg-image-wrap">
+            <img src="imgs/shop-men.png" alt="Product">
+            <div class="pg-actions">
+              <button class="pg-btn"><i class="fas fa-shopping-cart"></i></button>
+              <button class="pg-btn"><i class="far fa-heart"></i></button>
+            </div>
+          </div>
+          <div class="pg-info">
+            <div class="pg-category">Men</div>
+            <h3 class="pg-title">Classic Tee</h3>
+            <div class="pg-price-row">
+              <div class="pg-price">$15.00</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="product-grid-card">
+          <div class="pg-image-wrap">
+            <img src="imgs/best-seller-2.png" alt="Product">
+            <div class="pg-actions">
+              <button class="pg-btn"><i class="fas fa-shopping-cart"></i></button>
+              <button class="pg-btn"><i class="far fa-heart"></i></button>
+            </div>
+          </div>
+          <div class="pg-info">
+            <div class="pg-category">Women</div>
+            <h3 class="pg-title">Floral Dress</h3>
+            <div class="pg-price-row">
+              <div class="pg-price">$35.00</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="product-grid-card">
+          <div class="pg-image-wrap">
+            <img src="imgs/best-seller-3.png" alt="Product">
+            <div class="pg-actions">
+              <button class="pg-btn"><i class="fas fa-shopping-cart"></i></button>
+              <button class="pg-btn"><i class="far fa-heart"></i></button>
+            </div>
+          </div>
+          <div class="pg-info">
+            <div class="pg-category">Unisex</div>
+            <h3 class="pg-title">Cool Hat</h3>
+            <div class="pg-price-row">
+              <div class="pg-price">$12.00</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="product-grid-card">
+          <div class="pg-image-wrap">
+            <img src="imgs/shop-men.png" alt="Product">
+            <div class="pg-actions">
+              <button class="pg-btn"><i class="fas fa-shopping-cart"></i></button>
+              <button class="pg-btn"><i class="far fa-heart"></i></button>
+            </div>
+          </div>
+          <div class="pg-info">
+            <div class="pg-category">Men</div>
+            <h3 class="pg-title">Winter Jacket</h3>
+            <div class="pg-price-row">
+              <div class="pg-price">$89.00</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-logo">
+            <img src="imgs/logo.png" alt="Logo" style="height: 60px;">
+          </div>
+          <p class="text-white-50 small pe-lg-5">Print on Love brings you the finest custom-printed gifts. From
+            heartfelt mugs to personalized apparel, we turn your memories into keepsakes.</p>
+          <div class="social-links">
+            <a href="#" class="social-btn"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-btn"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-btn"><i class="fab fa-pinterest"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled footer-links">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-6">
+          <h5>Shop</h5>
+          <ul class="list-unstyled footer-links">
+            <li><a href="#">For Him</a></li>
+            <li><a href="#">For Her</a></li>
+            <li><a href="#">Accessories</a></li>
+            <li><a href="#">New Arrivals</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <h5>Newsletter</h5>
+          <p class="text-white-50 small">Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.
+          </p>
+          <div class="newsletter-box">
+            <input type="email" class="newsletter-input" placeholder="Enter your email">
+            <button class="newsletter-btn"><i class="fas fa-paper-plane"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="border-top border-secondary mt-5 pt-4 text-center text-white-50 small">
+        <p>&copy; 2024 Print on Love. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

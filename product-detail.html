@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Pink Header</title>
+  <title>H&M Men's Loose Fit Hoodie | Print on Love</title>
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -12,8 +12,8 @@
   <!-- Font Awesome for Icons -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 
-  <!-- Google Font: Poppins (Semi-Bold) -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+  <!-- Google Font: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- custom css-->
   <link href="style.css" rel="stylesheet">
@@ -23,16 +23,16 @@
 <body>
 
   <div class="top-bar">
-    <div class="container d-flex justify-content-between align-items-center flex-wrap">
+    <div class="container-fluid px-5 d-flex justify-content-between align-items-center flex-wrap">
 
       <!-- Left Side: Contact Info -->
       <div class="d-flex align-items-center flex-wrap">
-        <div class="icon-text"><i class="fas fa-phone"></i>: Contact Here</div>
-        <div class="icon-text ms-2"><i class="fas fa-envelope"></i>: Mail Here</div>
+        <div class="icon-text"><i class="fas fa-phone"></i>: +1 234 567 8900</div>
+        <div class="icon-text ms-2"><i class="fas fa-envelope"></i>: support@printonlove.com</div>
       </div>
 
       <!-- Center: Search Bar -->
-      <div class="d-flex justify-content-center my-2 my-lg-0 flex-grow-1">
+      <div class="d-flex justify-content-center my-2 my-lg-0 flex-grow-1 mx-lg-5">
         <div class="input-group">
           <input type="text" class="form-control search-bar" placeholder="Search">
           <button class="btn search-btn" type="button">
@@ -44,7 +44,7 @@
       <!-- Right Side: Icons -->
       <div class="d-flex align-items-center flex-wrap">
         <div class="icon-text pe-1 pe-0"><i class="fas fa-user"></i>
-          <a href="login.html"> Login </a>/<a href="#"> Sign in</a>
+          <a href="login.html"> Login </a>/ <a href="#"> Sign in</a>
         </div>
         <div class="icon-text  pe-1 pe-0">
           <a href="#"> <i class="fas fa-heart"></i> Wishlist</a>
@@ -52,11 +52,7 @@
 
         <!-- Cart Icon with Badge -->
         <div class="icon-text cart-icon  pe-1 pe-0">
-          <a href="#"> <span class="cart-badge">2</span>
-            <i class="fas fa-shopping-cart"></i>
-
-            Cart</a>
-
+          <a href="#"> <i class="fas fa-shopping-cart"></i> Cart (2)</a>
         </div>
 
         <div class="icon-text">
@@ -68,508 +64,391 @@
   </div>
 
   <!-- navbar -->
-   <div class="shadow-sm">
-  <div class="container">
-    <nav class="navbar navbar-expand-lg bg-white">
-      <div class="container-fluid">
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
 
-        <!-- Logo -->
-        <a class="navbar-brand text-center" href="index.html">
-          <img src="imgs/logo.png" alt="Logo">
+      <!-- Logo -->
+      <a class="navbar-brand text-center" href="index.html">
+        <img src="imgs/logo.png" alt="Logo">
+      </a>
 
-        </a>
+      <!-- Mobile toggle -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <!-- Mobile toggle -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+      <!-- Nav Items -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav align-items-center">
 
-        <!-- Nav Items -->
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-          <ul class="navbar-nav align-items-center">
+          <!-- Home -->
+          <li class="nav-item">
+            <a class="nav-link" href="index.html"><img src="imgs/home-icon.png" alt="Home"> Home</a>
+          </li>
 
-            <!-- Home -->
-            <li class="nav-item">
-              <a class="nav-link" href="#"><img src="imgs/home-icon.png" alt="Gift for Her"> Home</a>
-            </li>
+          <!-- Gift for Him -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="giftHimDropdown" role="button" data-bs-toggle="dropdown">
+              <img src="imgs/man-icon.png" alt="Gift for Him"> Gift for Him
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">T-Shirts</a></li>
+              <li><a class="dropdown-item" href="#">Mugs</a></li>
+            </ul>
+          </li>
 
-            <!-- Gift for Him -->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="giftHimDropdown" role="button" data-bs-toggle="dropdown">
-                <img src="imgs/man-icon.png" alt="Gift for Her"> Gift for Him
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Option 1</a></li>
-                <li><a class="dropdown-item" href="#">Option 2</a></li>
-              </ul>
-            </li>
+          <!-- Gift for Her -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="giftHerDropdown" role="button" data-bs-toggle="dropdown">
+              <img src="imgs/woman-icon.png" alt="Gift for Her"> Gift for Her
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Jewelry</a></li>
+              <li><a class="dropdown-item" href="#">Apparel</a></li>
+            </ul>
+          </li>
 
-            <!-- Gift for Her (using uploaded woman.png) -->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="giftHerDropdown" role="button" data-bs-toggle="dropdown">
-                <img src="imgs/woman-icon.png" alt="Gift for Her"> Gift for Her
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Option 1</a></li>
-                <li><a class="dropdown-item" href="#">Option 2</a></li>
-              </ul>
-            </li>
-
-            <!-- Contact -->
-            <li class="nav-item">
-              <a class="nav-link" href="#">CONTACT</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </div>
-  </div>
-  <!-- product details -->
-
-  <div class="container pt-3 pb-5">
-    <div class="row">
-      <!-- Product Image -->
-      <div class="col-md-6 text-center">
-        <img src="imgs/shop-men.png" alt="Hoodie" class="product-img shadow-sm img-fluid">
-        <div class="d-flex justify-content-center mt-3">
-          <img src="imgs/shop-men.png" class="thumbnail-img mx-1" alt="thumb1">
-          <img src="imgs/shop-men.png" class="thumbnail-img mx-1" alt="thumb2">
-          <img src="imgs/shop-men.png" class="thumbnail-img mx-1" alt="thumb3">
-          <img src="imgs/shop-men.png" class="thumbnail-img mx-1" alt="thumb4">
-        </div>
-      </div>
-
-      <!-- Product Info -->
-      <div class="col-md-6">
-        <h4><strong>H&amp;M Men's<br>Loose Fit Hoodie</strong></h4>
-        <div class="text-warning mb-2">
-          ★★★★☆
-          <span class="text-muted small">41 reviews</span>
-        </div>
-        <p class="text-muted">
-          Suspendisse quos? Tempus cras iure temporibus? Eu laudantium cubilia sem sem! Repudiandae et! Massa senectus
-          enim minim sociosqu delectus posuere.
-        </p>
-        <h5><strong>Price : 1999 ₹</strong></h5>
-        <p class="mb-1"><small><strong>91%</strong> of buyers enjoyed this product! (<strong>87 votes</strong>)</small>
-        </p>
-
-        <p><strong>Sizes:</strong>
-          <span class="ms-2">S</span>
-          <span class="ms-2">M</span>
-          <span class="ms-2">L</span>
-          <span class="ms-2">XL</span>
-        </p>
-
-        <p><strong>Colors:</strong>
-          <span class="color-dot color-red"></span>
-          <span class="color-dot color-orange"></span>
-          <span class="color-dot color-blue"></span>
-          <span class="color-dot color-yellow"></span>
-        </p>
-
-        <button class="btn btn-pink mt-3 px-4">ADD TO CART</button>
+          <!-- Contact -->
+          <li class="nav-item">
+            <a class="nav-link" href="#">CONTACT</a>
+          </li>
+        </ul>
       </div>
     </div>
-  </div>
+  </nav>
 
-
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4">
-        <div class="product-pd-card mx-auto">
-          <div class="p-0">
-            <div class="d-flex card-horizontal">
-
-              <!-- LEFT: image -->
-              <div class="img-wrap d-flex ">
-                <div class="img-outer">
-                  <!-- use the provided image path -->
-                  <img src="imgs/shop-men.png" alt="Hoodie" class="product-image">
-                </div>
-              </div>
-
-              <!-- RIGHT: content -->
-              <div class="flex-grow-1 p-3">
-                <div class="d-flex justify-content-between align-items-start">
-                  <div>
-                    <div class="title">H&amp;M Men's Loose Fit Hoodie</div>
-                    <div class="subtitle">41 reviews</div>
-                  </div>
-                  <!-- small badge or rating area could go here -->
-                </div>
-
-                <div class="stars">
-                  <!-- 5 filled stars (SVG) -->
-                  <svg viewBox="0 0 20 20" fill="#f6c84c" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M10 1.6l2.2 4.46 4.92.72-3.56 3.47.84 4.89L10 13.9 5.58 15.14l.84-4.89L2.86 6.78l4.92-.72L10 1.6z" />
-                  </svg>
-                  <svg viewBox="0 0 20 20" fill="#f6c84c" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M10 1.6l2.2 4.46 4.92.72-3.56 3.47.84 4.89L10 13.9 5.58 15.14l.84-4.89L2.86 6.78l4.92-.72L10 1.6z" />
-                  </svg>
-                  <svg viewBox="0 0 20 20" fill="#f6c84c" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M10 1.6l2.2 4.46 4.92.72-3.56 3.47.84 4.89L10 13.9 5.58 15.14l.84-4.89L2.86 6.78l4.92-.72L10 1.6z" />
-                  </svg>
-                  <svg viewBox="0 0 20 20" fill="#f6c84c" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M10 1.6l2.2 4.46 4.92.72-3.56 3.47.84 4.89L10 13.9 5.58 15.14l.84-4.89L2.86 6.78l4.92-.72L10 1.6z" />
-                  </svg>
-                  <svg viewBox="0 0 20 20" fill="#f6c84c" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M10 1.6l2.2 4.46 4.92.72-3.56 3.47.84 4.89L10 13.9 5.58 15.14l.84-4.89L2.86 6.78l4.92-.72L10 1.6z" />
-                  </svg>
-
-                </div>
-
-
-              </div>
-            </div>
-            <div class="d-flex justify-content-between mt-2">
-              <div class="price-row align-self-start">
-                <div class="price">Price : <span style="color:#111;">1999 ₹</span></div>
-              </div>
-
-              <div class="ms-3 d-flex align-items-start">
-                <div style="font-size:.9rem; color:var(--muted); margin-right:.5rem;">Colors:</div>
-                <div class="colors">
-                  <span class="dot" style="background:#ff7a7a"></span>
-                  <span class="dot" style="background:#ffcc00"></span>
-                  <span class="dot" style="background:#1e90ff"></span>
-                  <span class="dot" style="background:#00c853"></span>
-                </div>
-              </div>
-            </div>
-
-            <p class="desc">
-              Suspendisse quos? Tempus cras iure temporibus? Eu laudantium cubilia sem sem! Repudiandae et! Massa
-              senectus enim minim sociosqu delectus posuere.
-            </p>
-          </div>
-        </div>
-
-      </div>
-      <div class="col-md-4">
-        <div class="product-pd-card mx-auto">
-          <div class="p-0">
-            <div class="d-flex card-horizontal">
-
-              <!-- LEFT: image -->
-              <div class="img-wrap d-flex ">
-                <div class="img-outer">
-                  <!-- use the provided image path -->
-                  <img src="imgs/shop-men.png" alt="Hoodie" class="product-image">
-                </div>
-              </div>
-
-              <!-- RIGHT: content -->
-              <div class="flex-grow-1 p-3">
-                <div class="d-flex justify-content-between align-items-start">
-                  <div>
-                    <div class="title">H&amp;M Men's Loose Fit Hoodie</div>
-                    <div class="subtitle">41 reviews</div>
-                  </div>
-                  <!-- small badge or rating area could go here -->
-                </div>
-
-                <div class="stars">
-                  <!-- 5 filled stars (SVG) -->
-                  <svg viewBox="0 0 20 20" fill="#f6c84c" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M10 1.6l2.2 4.46 4.92.72-3.56 3.47.84 4.89L10 13.9 5.58 15.14l.84-4.89L2.86 6.78l4.92-.72L10 1.6z" />
-                  </svg>
-                  <svg viewBox="0 0 20 20" fill="#f6c84c" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M10 1.6l2.2 4.46 4.92.72-3.56 3.47.84 4.89L10 13.9 5.58 15.14l.84-4.89L2.86 6.78l4.92-.72L10 1.6z" />
-                  </svg>
-                  <svg viewBox="0 0 20 20" fill="#f6c84c" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M10 1.6l2.2 4.46 4.92.72-3.56 3.47.84 4.89L10 13.9 5.58 15.14l.84-4.89L2.86 6.78l4.92-.72L10 1.6z" />
-                  </svg>
-                  <svg viewBox="0 0 20 20" fill="#f6c84c" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M10 1.6l2.2 4.46 4.92.72-3.56 3.47.84 4.89L10 13.9 5.58 15.14l.84-4.89L2.86 6.78l4.92-.72L10 1.6z" />
-                  </svg>
-                  <svg viewBox="0 0 20 20" fill="#f6c84c" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M10 1.6l2.2 4.46 4.92.72-3.56 3.47.84 4.89L10 13.9 5.58 15.14l.84-4.89L2.86 6.78l4.92-.72L10 1.6z" />
-                  </svg>
-
-                </div>
-
-
-              </div>
-            </div>
-            <div class="d-flex justify-content-between mt-2">
-              <div class="price-row align-self-start">
-                <div class="price">Price : <span style="color:#111;">1999 ₹</span></div>
-              </div>
-
-              <div class="ms-3 d-flex align-items-start">
-                <div style="font-size:.9rem; color:var(--muted); margin-right:.5rem;">Colors:</div>
-                <div class="colors">
-                  <span class="dot" style="background:#ff7a7a"></span>
-                  <span class="dot" style="background:#ffcc00"></span>
-                  <span class="dot" style="background:#1e90ff"></span>
-                  <span class="dot" style="background:#00c853"></span>
-                </div>
-              </div>
-            </div>
-
-            <p class="desc">
-              Suspendisse quos? Tempus cras iure temporibus? Eu laudantium cubilia sem sem! Repudiandae et! Massa
-              senectus enim minim sociosqu delectus posuere.
-            </p>
-          </div>
-        </div>
-
-      </div>
-      <div class="col-md-4">
-        <div class="product-pd-card mx-auto">
-          <div class="p-0">
-            <div class="d-flex card-horizontal">
-
-              <!-- LEFT: image -->
-              <div class="img-wrap d-flex ">
-                <div class="img-outer">
-                  <!-- use the provided image path -->
-                  <img src="imgs/shop-men.png" alt="Hoodie" class="product-image">
-                </div>
-              </div>
-
-              <!-- RIGHT: content -->
-              <div class="flex-grow-1 p-3">
-                <div class="d-flex justify-content-between align-items-start">
-                  <div>
-                    <div class="title">H&amp;M Men's Loose Fit Hoodie</div>
-                    <div class="subtitle">41 reviews</div>
-                  </div>
-                  <!-- small badge or rating area could go here -->
-                </div>
-
-                <div class="stars">
-                  <!-- 5 filled stars (SVG) -->
-                  <svg viewBox="0 0 20 20" fill="#f6c84c" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M10 1.6l2.2 4.46 4.92.72-3.56 3.47.84 4.89L10 13.9 5.58 15.14l.84-4.89L2.86 6.78l4.92-.72L10 1.6z" />
-                  </svg>
-                  <svg viewBox="0 0 20 20" fill="#f6c84c" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M10 1.6l2.2 4.46 4.92.72-3.56 3.47.84 4.89L10 13.9 5.58 15.14l.84-4.89L2.86 6.78l4.92-.72L10 1.6z" />
-                  </svg>
-                  <svg viewBox="0 0 20 20" fill="#f6c84c" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M10 1.6l2.2 4.46 4.92.72-3.56 3.47.84 4.89L10 13.9 5.58 15.14l.84-4.89L2.86 6.78l4.92-.72L10 1.6z" />
-                  </svg>
-                  <svg viewBox="0 0 20 20" fill="#f6c84c" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M10 1.6l2.2 4.46 4.92.72-3.56 3.47.84 4.89L10 13.9 5.58 15.14l.84-4.89L2.86 6.78l4.92-.72L10 1.6z" />
-                  </svg>
-                  <svg viewBox="0 0 20 20" fill="#f6c84c" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M10 1.6l2.2 4.46 4.92.72-3.56 3.47.84 4.89L10 13.9 5.58 15.14l.84-4.89L2.86 6.78l4.92-.72L10 1.6z" />
-                  </svg>
-
-                </div>
-
-
-              </div>
-            </div>
-            <div class="d-flex justify-content-between mt-2">
-              <div class="price-row align-self-start">
-                <div class="price">Price : <span style="color:#111;">1999 ₹</span></div>
-              </div>
-
-              <div class="ms-3 d-flex align-items-start">
-                <div style="font-size:.9rem; color:var(--muted); margin-right:.5rem;">Colors:</div>
-                <div class="colors">
-                  <span class="dot" style="background:#ff7a7a"></span>
-                  <span class="dot" style="background:#ffcc00"></span>
-                  <span class="dot" style="background:#1e90ff"></span>
-                  <span class="dot" style="background:#00c853"></span>
-                </div>
-              </div>
-            </div>
-
-            <p class="desc">
-              Suspendisse quos? Tempus cras iure temporibus? Eu laudantium cubilia sem sem! Repudiandae et! Massa
-              senectus enim minim sociosqu delectus posuere.
-            </p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-    <hr />
-  </div>
-
-
-  
-  <!--customer says-->
-  <div class="container mt-5">
-    <div class="row">
-      <div class="col-md-4 me-4">
-
-        <h5 class="fw-bold mb-3">Customer reviews</h5>
-        <!-- Stars row -->
-        <div class="d-flex align-items-center mb-3">
-          <div class="star">★</div>
-          <div class="star">★</div>
-          <div class="star">★</div>
-          <div class="star">★</div>
-          <div class="star">★</div>
-          <span class="ms-2 fw-semibold">5 Out of 5</span>
-        </div>
-        <!-- Rating rows -->
-        <div class="mb-2 d-flex align-items-center">
-          <div class="review-label">5 Star</div>
-          <div class="flex-grow-1">
-            <div class="progress">
-              <div class="progress-bar" style="width:100%"></div>
-            </div>
-          </div>
-        </div>
-        <div class="mb-2 d-flex align-items-center">
-          <div class="review-label">4 Star</div>
-          <div class="flex-grow-1">
-            <div class="progress">
-              <div class="progress-bar" style="width:70%"></div>
-            </div>
-          </div>
-        </div>
-        <div class="mb-2 d-flex align-items-center">
-          <div class="review-label">3 Star</div>
-          <div class="flex-grow-1">
-            <div class="progress">
-              <div class="progress-bar" style="width:50%"></div>
-            </div>
-          </div>
-        </div>
-        <div class="mb-2 d-flex align-items-center">
-          <div class="review-label">2 Star</div>
-          <div class="flex-grow-1">
-            <div class="progress">
-              <div class="progress-bar" style="width:30%"></div>
-            </div>
-          </div>
-        </div>
-        <div class="mb-2 d-flex align-items-center">
-          <div class="review-label">1 Star</div>
-          <div class="flex-grow-1">
-            <div class="progress">
-              <div class="progress-bar" style="width:40%"></div>
-            </div>
-          </div>
-        </div>
-
-
-      </div>
-      <div class="col-md-5 ms-5">
-        <div class="review-card">
-           <h5 class="fw-bold mb-3">Customer says</h4>
-
-          <div class="my-2">
-            <strong>Mohit rao</strong>
-            <p class="stars">
-              &#9733;&#9733;&#9733;&#9733;&#9734; Excellent Product
-            </p>
-          </div>
-
-          <p class="fs-6">
-            I have purchased this t-shirt and I'm really impressed with the overall quality. The cotton fabric is soft,
-            breathable, and feels great on the skin – perfect for everyday wear. The fit is true to size and gives a
-            neat, clean look without being too tight or too loose. The color is exactly as shown and adds a subtle touch
-            of style to my wardrobe.
-          </p>
-          <p class="fs-6">Highly recommend this if you’re looking for a well-made, comfortable t-shirt at a reasonable price.</p>
-
-          <div class="product-images d-flex">
-            <img src="imgs/shop-men.png" alt="Product image 1">
-            <img src="imgs/shop-men.png" alt="Product image 1">
-          </div>
-
-         
-
-        </div>
-
-      </div>
-    </div>
-  </div>
-  <!-- footer -->
- <footer class="footer mt-5">
+  <!-- Page Header -->
+  <section class="page-header text-center" style="padding: 20px 0; margin-bottom: 20px;">
     <div class="container">
-      <div class="row align-items-start">
-        <!-- Logo Column -->
-        <div class="col-md-3 text-center text-md-start mb-3">
-          <img src="imgs/logo.png" alt="Print on Love Logo">
+      <h1>Product Details</h1>
+    </div>
+  </section>
 
+  <!-- Product Detail Section -->
+  <section class="container pd-section">
+    <div class="row g-5">
+      <!-- Left: Gallery -->
+      <div class="col-lg-6">
+        <div class="product-gallery-main">
+          <img src="imgs/shop-men.png" id="mainImage" alt="Main Product Image">
         </div>
-
-        <!-- Customer Service -->
-        <div class="col-md-3 mb-3">
-          <h5 class="footer-heading">Customer Service</h5>
-          <ul class="list-unstyled">
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">Returns</a></li>
-            <li><a href="#">Order History</a></li>
-            <li><a href="#">My Account</a></li>
-            <li><a href="#">Unsubscribe Notification</a></li>
-          </ul>
-        </div>
-
-        <!-- Information -->
-        <div class="col-md-3 mb-3">
-          <h5 class="footer-heading">Information</h5>
-          <ul class="list-unstyled">
-            <li><a href="#">Delivery Information</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms & Conditions</a></li>
-            <li><a href="#">Warranty</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Seller Login</a></li>
-          </ul>
-        </div>
-
-        <!-- Extras -->
-        <div class="col-md-3 mb-3">
-          <h5 class="footer-heading">Extras</h5>
-          <ul class="list-unstyled">
-            <li><a href="#">Gift Vouchers</a></li>
-            <li><a href="#">Wishlist</a></li>
-            <li><a href="#">Order History</a></li>
-            <li><a href="#">Track Your Order</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="row justify-content-between align-items-center">
-      
-      <!-- Email Signup -->
-      <div class="col-md-6 col-lg-4">
-        <div class="email-input">
-          <input type="email" placeholder="Your Email">
-          <button>SignUP</button>
+        <div class="thumbnail-strip">
+          <img src="imgs/shop-men.png" class="thumbnail active" onclick="changeImage(this.src)" alt="Thumb">
+          <img src="imgs/best-seller-2.png" class="thumbnail" onclick="changeImage(this.src)" alt="Thumb">
+          <img src="imgs/best-seller-3.png" class="thumbnail" onclick="changeImage(this.src)" alt="Thumb">
         </div>
       </div>
 
-      <!-- Social Icons -->
-      <div class="col-md-6 col-lg-8 text-end social-icons">
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-whatsapp"></i></a>
-      </div>
+      <!-- Right: Info -->
+      <div class="col-lg-6">
+        <h2 class="pd-title">H&M Men's Loose Fit Hoodie</h2>
+        <div class="d-flex align-items-center mb-3">
+          <div class="text-warning small me-2">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <span class="text-muted small">(41 reviews)</span>
+        </div>
 
+        <div class="pd-price">$29.00</div>
+
+        <p class="pd-meta">
+          Availability: <span class="text-success fw-bold">In Stock</span> <br>
+          SKU: <span class="text-dark">POL-12345</span>
+        </p>
+
+        <p class="text-muted mb-4">
+          Experience ultimate comfort with our premium loose-fit hoodie. Crafted from 100% organic cotton, it's perfect
+          for casual outings or lounging at home. Features a kangaroo pocket and adjustable drawstring hood.
+        </p>
+
+        <!-- Color Options -->
+        <div class="mb-4">
+          <label class="option-label">Color</label>
+          <div class="color-selector">
+            <div class="color-option active" style="background-color: #ef4444;"></div>
+            <div class="color-option" style="background-color: #3b82f6;"></div>
+            <div class="color-option" style="background-color: #22c55e;"></div>
+            <div class="color-option" style="background-color: #1f2937;"></div>
+          </div>
+        </div>
+
+        <!-- Size Options -->
+        <div class="mb-4">
+          <label class="option-label">Size</label>
+          <div class="size-selector">
+            <div class="size-option">S</div>
+            <div class="size-option active">M</div>
+            <div class="size-option">L</div>
+            <div class="size-option">XL</div>
+          </div>
+        </div>
+
+        <!-- Add to Cart -->
+        <div class="add-to-cart-wrapper">
+          <div class="qty-input-group">
+            <button class="qty-btn-pd">-</button>
+            <input type="text" class="qty-input-pd" value="1">
+            <button class="qty-btn-pd">+</button>
+          </div>
+          <button class="btn-add-cart">
+            <i class="fas fa-shopping-bag me-2"></i> Add to Cart
+          </button>
+          <button class="btn btn-outline-secondary rounded-circle ms-2" style="width:50px; height:50px;">
+            <i class="far fa-heart"></i>
+          </button>
+        </div>
+
+        <!-- Share -->
+        <div class="d-flex align-items-center gap-3 text-muted small mt-4">
+          <span>Share:</span>
+          <a href="#" class="text-reset"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="text-reset"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="text-reset"><i class="fab fa-pinterest"></i></a>
+        </div>
+
+      </div>
     </div>
 
+    <!-- Tabs Section -->
+    <div class="row mt-5">
+      <div class="col-12">
+        <ul class="nav nav-tabs nav-tabs-custom" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="desc-tab" data-bs-toggle="tab" data-bs-target="#desc" type="button"
+              role="tab">Description</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="reviews-tab" data-bs-toggle="tab" data-bs-target="#reviews" type="button"
+              role="tab">Reviews (41)</button>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="desc" role="tabpanel">
+            <p class="text-muted">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+              fugiat nulla pariatur.
+            </p>
+            <ul class="text-muted small">
+              <li>100% Cotton</li>
+              <li>Machine wash cold</li>
+              <li>Regular fit</li>
+            </ul>
+          </div>
+          <div class="tab-pane fade" id="reviews" role="tabpanel">
+            <div class="review-item mb-4">
+              <div class="d-flex align-items-center mb-2">
+                <span class="fw-bold me-2">John Doe</span>
+                <span class="text-warning small"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                    class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+              </div>
+              <p class="text-muted mb-0">Amazing quality! Fits perfectly and very comfortable.</p>
+            </div>
+
+            <!-- Add Review Form -->
+            <div class="mt-5 review-form-wrapper">
+              <h4 class="mb-4">Add Product Review</h4>
+              <form class="review-form">
+                <div class="mb-3">
+                  <label class="form-label">Name</label>
+                  <input type="text" class="form-control bg-light border-0" placeholder="Your Name">
+                </div>
+                <div class="mb-3">
+                  <label class="form-label d-block">Rating *</label>
+                  <div class="star-rating-input">
+                    <i class="far fa-star" data-value="1"></i>
+                    <i class="far fa-star" data-value="2"></i>
+                    <i class="far fa-star" data-value="3"></i>
+                    <i class="far fa-star" data-value="4"></i>
+                    <i class="far fa-star" data-value="5"></i>
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Comment</label>
+                  <textarea class="form-control bg-light border-0" rows="4" placeholder="Your Review"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary-custom px-4 py-2">Submit Review</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related Products -->
+  <section class="container mb-5">
+    <h3 class="fw-bold mb-4 text-center">You Might Also Like</h3>
+    <div class="row g-4">
+      <div class="col-6 col-md-3">
+        <div class="product-grid-card">
+          <div class="pg-image-wrap">
+            <a href="product-detail.html">
+              <img src="imgs/shop-men.png" alt="Product">
+            </a>
+            <!-- Removed pg-actions (overlay icons) -->
+          </div>
+          <div class="pg-info">
+            <div class="pg-category">Men</div>
+            <h3 class="pg-title"><a href="product-detail.html" class="text-reset text-decoration-none">Classic Tee</a>
+            </h3>
+            <div class="pg-price-row">
+              <div class="pg-price">$15.00</div>
+            </div>
+            <button class="pg-add-cart-btn">
+              <i class="fas fa-shopping-cart"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="product-grid-card">
+          <div class="pg-image-wrap">
+            <a href="product-detail.html">
+              <img src="imgs/best-seller-2.png" alt="Product">
+            </a>
+          </div>
+          <div class="pg-info">
+            <div class="pg-category">Women</div>
+            <h3 class="pg-title"><a href="product-detail.html" class="text-reset text-decoration-none">Floral Dress</a>
+            </h3>
+            <div class="pg-price-row">
+              <div class="pg-price">$35.00</div>
+            </div>
+            <button class="pg-add-cart-btn">
+              <i class="fas fa-shopping-cart"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="product-grid-card">
+          <div class="pg-image-wrap">
+            <a href="product-detail.html">
+              <img src="imgs/best-seller-3.png" alt="Product">
+            </a>
+          </div>
+          <div class="pg-info">
+            <div class="pg-category">Unisex</div>
+            <h3 class="pg-title"><a href="product-detail.html" class="text-reset text-decoration-none">Cool Hat</a></h3>
+            <div class="pg-price-row">
+              <div class="pg-price">$12.00</div>
+            </div>
+            <button class="pg-add-cart-btn">
+              <i class="fas fa-shopping-cart"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="product-grid-card">
+          <div class="pg-image-wrap">
+            <a href="product-detail.html">
+              <img src="imgs/shop-men.png" alt="Product">
+            </a>
+          </div>
+          <div class="pg-info">
+            <div class="pg-category">Men</div>
+            <h3 class="pg-title"><a href="product-detail.html" class="text-reset text-decoration-none">Winter Jacket</a>
+            </h3>
+            <div class="pg-price-row">
+              <div class="pg-price">$89.00</div>
+            </div>
+            <button class="pg-add-cart-btn">
+              <i class="fas fa-shopping-cart"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-logo">
+            <img src="imgs/logo.png" alt="Logo" style="height: 60px;">
+          </div>
+          <p class="text-white-50 small pe-lg-5">Print on Love brings you the finest custom-printed gifts. From
+            heartfelt mugs to personalized apparel, we turn your memories into keepsakes.</p>
+          <div class="social-links">
+            <a href="#" class="social-btn"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-btn"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-btn"><i class="fab fa-pinterest"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled footer-links">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-6">
+          <h5>Shop</h5>
+          <ul class="list-unstyled footer-links">
+            <li><a href="#">For Him</a></li>
+            <li><a href="#">For Her</a></li>
+            <li><a href="#">Accessories</a></li>
+            <li><a href="#">New Arrivals</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <h5>Newsletter</h5>
+          <p class="text-white-50 small">Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.
+          </p>
+          <div class="newsletter-box">
+            <input type="email" class="newsletter-input" placeholder="Enter your email">
+            <button class="newsletter-btn"><i class="fas fa-paper-plane"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="border-top border-secondary mt-5 pt-4 text-center text-white-50 small">
+        <p>&copy; 2024 Print on Love. All rights reserved.</p>
+      </div>
     </div>
   </footer>
 
-
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    // Simple script for gallery interactions
+    function changeImage(src) {
+      document.getElementById('mainImage').src = src;
+      // removing active class logic for brevity or adding a simple one
+      document.querySelectorAll('.thumbnail').forEach(thumb => thumb.classList.remove('active'));
+      event.target.classList.add('active');
+    }
+
+    // Add active state to size/color options
+    document.querySelectorAll('.size-option').forEach(opt => {
+      opt.addEventListener('click', function () {
+        document.querySelectorAll('.size-option').forEach(o => o.classList.remove('active'));
+        this.classList.add('active');
+      });
+    });
+
+    document.querySelectorAll('.color-option').forEach(opt => {
+      opt.addEventListener('click', function () {
+        document.querySelectorAll('.color-option').forEach(o => o.classList.remove('active'));
+        this.classList.add('active');
+      });
+    });
+  </script>
+
 </body>
 
 </html>

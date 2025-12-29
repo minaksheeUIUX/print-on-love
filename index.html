@@ -4,35 +4,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Pink Header</title>
+  <title>Print on Love | Premium Personalized Gifts</title>
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Font Awesome for Icons -->
+  <!-- Font Awesome -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 
-  <!-- Google Font: Poppins (Semi-Bold) -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
-
-  <!-- custom css-->
+  <!-- Custom CSS -->
   <link href="style.css" rel="stylesheet">
-
 </head>
 
 <body>
 
   <div class="top-bar">
-    <div class="container d-flex justify-content-between align-items-center flex-wrap">
+    <div class="container-fluid px-5 d-flex justify-content-between align-items-center flex-wrap">
 
       <!-- Left Side: Contact Info -->
       <div class="d-flex align-items-center flex-wrap">
-        <div class="icon-text"><i class="fas fa-phone"></i>: Contact Here</div>
-        <div class="icon-text ms-2"><i class="fas fa-envelope"></i>: Mail Here</div>
+        <div class="icon-text"><i class="fas fa-phone"></i>: +1 234 567 8900</div>
+        <div class="icon-text ms-2"><i class="fas fa-envelope"></i>: support@printonlove.com</div>
       </div>
 
       <!-- Center: Search Bar -->
-      <div class="d-flex justify-content-center my-2 my-lg-0 flex-grow-1">
+      <div class="d-flex justify-content-center my-2 my-lg-0 flex-grow-1 mx-lg-5">
         <div class="input-group">
           <input type="text" class="form-control search-bar" placeholder="Search">
           <button class="btn search-btn" type="button">
@@ -44,360 +40,354 @@
       <!-- Right Side: Icons -->
       <div class="d-flex align-items-center flex-wrap">
         <div class="icon-text pe-1 pe-0"><i class="fas fa-user"></i>
-          <a href="login.html" > Login </a>/<a href="#"> Sign in</a>
+          <a href="login.html"> Login </a>/ <a href="#"> Sign in</a>
         </div>
         <div class="icon-text  pe-1 pe-0">
-           <a href="#"> <i class="fas fa-heart"></i> Wishlist</a></div>
+          <a href="#"> <i class="fas fa-heart"></i> Wishlist</a>
+        </div>
 
         <!-- Cart Icon with Badge -->
         <div class="icon-text cart-icon  pe-1 pe-0">
-          <a href="#">  <span class="cart-badge">2</span>
-          <i class="fas fa-shopping-cart"></i>
-
-          Cart</a>
-          
+          <a href="#"> <i class="fas fa-shopping-cart"></i> Cart (2)</a>
         </div>
 
         <div class="icon-text">
-           <a href="#"> <i class="fas fa-truck"></i> Track Order</a></div>
+          <a href="#"> <i class="fas fa-truck"></i> Track Order</a>
+        </div>
       </div>
 
     </div>
   </div>
 
   <!-- navbar -->
-  <div class="container">
-    <nav class="navbar navbar-expand-lg bg-white">
-      <div class="container-fluid">
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
 
-        <!-- Logo -->
-        <a class="navbar-brand text-center" href="index.html">
-          <img src="imgs/logo.png" alt="Logo">
+      <!-- Logo -->
+      <a class="navbar-brand text-center" href="index.html">
+        <img src="imgs/logo.png" alt="Logo">
+      </a>
 
-        </a>
+      <!-- Mobile toggle -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <!-- Mobile toggle -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+      <!-- Nav Items -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav align-items-center">
 
-        <!-- Nav Items -->
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-          <ul class="navbar-nav align-items-center">
+          <!-- Home -->
+          <li class="nav-item">
+            <a class="nav-link" href="index.html"><img src="imgs/home-icon.png" alt="Home"> Home</a>
+          </li>
 
-            <!-- Home -->
-            <li class="nav-item">
-              <a class="nav-link" href="#"><img src="imgs/home-icon.png" alt="Gift for Her"> Home</a>
-            </li>
+          <!-- Gift for Him -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="giftHimDropdown" role="button" data-bs-toggle="dropdown">
+              <img src="imgs/man-icon.png" alt="Gift for Him"> Gift for Him
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">T-Shirts</a></li>
+              <li><a class="dropdown-item" href="#">Mugs</a></li>
+            </ul>
+          </li>
 
-            <!-- Gift for Him -->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="giftHimDropdown" role="button" data-bs-toggle="dropdown">
-                <img src="imgs/man-icon.png" alt="Gift for Her"> Gift for Him
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Option 1</a></li>
-                <li><a class="dropdown-item" href="#">Option 2</a></li>
-              </ul>
-            </li>
+          <!-- Gift for Her -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="giftHerDropdown" role="button" data-bs-toggle="dropdown">
+              <img src="imgs/woman-icon.png" alt="Gift for Her"> Gift for Her
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Jewelry</a></li>
+              <li><a class="dropdown-item" href="#">Apparel</a></li>
+            </ul>
+          </li>
 
-            <!-- Gift for Her (using uploaded woman.png) -->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="giftHerDropdown" role="button" data-bs-toggle="dropdown">
-                <img src="imgs/woman-icon.png" alt="Gift for Her"> Gift for Her
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Option 1</a></li>
-                <li><a class="dropdown-item" href="#">Option 2</a></li>
-              </ul>
-            </li>
-
-            <!-- Contact -->
-            <li class="nav-item">
-              <a class="nav-link" href="#">CONTACT</a>
-            </li>
-          </ul>
-        </div>
+          <!-- Contact -->
+          <li class="nav-item">
+            <a class="nav-link" href="#">CONTACT</a>
+          </li>
+        </ul>
       </div>
-    </nav>
-  </div>
+    </div>
+  </nav>
 
-  <!--banner-->
-  <!-- Container for the content -->
-  <div class="banner-content">
+  <!-- Hero Section -->
+  <section class="hero-section">
     <div class="container">
-      <div class="row align-items-center justify-content-between">
-        <!-- Left side: Text content -->
-        <div class="col-md-6 text-content">
-          <h1>"We Print what the Heart Feels."</h1>
-        </div>
-        
-        <!-- Right side: Gift Box Image and Discount Offer -->
-        <div class="col-md-5">
-          <div id="promoCarousel" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-
-    <!-- Slide 1 -->
-    <div class="carousel-item active">
-      <div class="promo-card">
-        <div class="promo-text">
-          50% <br> <span>OFF</span>
-        </div>
-        <img src="imgs/best-seller-2.png" alt="Product">
-      </div>
-    </div>
-
-    <!-- Slide 3 -->
-    <div class="carousel-item">
-      <div class="promo-card">
-        <div class="promo-text">
-          Buy 1 <br> <span>Get 1 Free</span>
-        </div>
-        <img src="imgs/best-seller-3.png" alt="Product">
-      </div>
-    </div>
-
-  </div>
-
-  <!-- Controls -->
-  <button class="carousel-control-prev" type="button" data-bs-target="#promoCarousel" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#promoCarousel" data-bs-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </button>
-
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-  <!--product-->
-  <div class="container mt-5">
-    <div class="row text-center">
-      <!-- SHOP MEN -->
-      <a href="category.html" class="col-md-4 mb-5">
-        <div class="product-wrapper">
-          <div class="product-title">SHOP MEN</div>
-          <div class="product-card" style="background-image: url('imgs/shop-men.png');">
-            <button class="view-more-btn">View more →</button>
-          </div>
-        </div>
-      </a>
-
-      <!-- SHOP WOMEN -->
-      <a href="category.html" class="col-md-4 mb-5">
-        <div class="product-wrapper">
-          <div class="product-title">SHOP WOMEN</div>
-          <div class="product-card" style="background-image: url('imgs/shop-women.png');">
-            <button class="view-more-btn">View more →</button>
-          </div>
-        </div>
-      </a>
-
-      <!-- ACCESSORIES -->
-      <a href="category.html" class="col-md-4 mb-5">
-        <div class="product-wrapper">
-          <div class="product-title">ACCESSOIRES</div>
-          <div class="product-card" style="background-image: url('imgs/accesorices.png');">
-            <button class="view-more-btn">View more →</button>
-          </div>
-        </div>
-      </a>
-    </div>
-  </div>
-
-
-  <section class="best-sellers">
-    <div class="container">
-      <!-- Title -->
-      <h2 class="section-title display-6 text-center text-white" style="font-size:32px;">
-        BEST SELLERS
-      </h2>
-
-      <!-- Cards -->
-      <div class="row cards-row g-3 justify-content-center mb-4">
-        <!-- Card 1 -->
-        <div class="col-10 col-sm-6 col-md-4 col-lg-3 d-flex">
-          <a href="product-detail.html" class="card-product w-100">
-            <div class="img-wrap">
-              <!-- Replace src with each product image -->
-              <img src="imgs/best-seller-1.png" alt="Product 1">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-5 mb-lg-0">
+          <div class="hero-content">
+            <span class="badge bg-secondary mb-3 rounded-pill px-3 py-2 text-uppercase ls-1">New Collection 2024</span>
+            <h1>We Print What The <br> Heart Feels.</h1>
+            <p class="hero-subtitle">Discover our exclusive range of personalized gifts that speak the language of love.
+              Handcrafted with precision and care.</p>
+            <div class="d-flex gap-3">
+              <a href="category.html" class="btn btn-primary-custom shadow-lg">Shop Now</a>
+              <a href="#" class="btn btn-outline-dark rounded-pill px-4 py-3 fw-bold">View Collections</a>
             </div>
-            <div class="ribbon small">NEW</div>
-          </a>
+
+            <div class="mt-5 d-flex gap-5">
+              <div>
+                <h4 class="fw-bold mb-0">50k+</h4>
+                <small class="text-muted">Happy Customers</small>
+              </div>
+              <div>
+                <h4 class="fw-bold mb-0">100%</h4>
+                <small class="text-muted">Satisfaction</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="hero-image-wrapper text-center">
+            <img src="imgs/banner.png" class="img-fluid position-relative z-2 rounded-4 shadow-lg lazy-load"
+              alt="Gift Collections">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Browse Categories -->
+  <section class="py-5">
+    <div class="container py-5">
+      <div class="section-title">
+        <h2>Browse Categories</h2>
+        <p>Find the perfect gift for your loved ones</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Card 1 -->
+        <div class="col-md-4">
+          <div class="category-card" onclick="location.href='category.html'">
+            <img src="imgs/shop-men.png" class="category-img" alt="Shop Men">
+            <div class="category-overlay">
+              <div class="category-content">
+                <h3>For Him</h3>
+                <span>Shop Collection <i class="fas fa-arrow-right ms-2"></i></span>
+              </div>
+            </div>
+          </div>
         </div>
 
         <!-- Card 2 -->
-        <div class="col-10 col-sm-6 col-md-4 col-lg-3 d-flex">
-          <div class="card-product w-100">
-            <div class="img-wrap">
-              <img src="imgs/best-seller-2.png" alt="Product 2">
+        <div class="col-md-4">
+          <div class="category-card" onclick="location.href='category.html'">
+            <img src="imgs/shop-women.png" class="category-img" alt="Shop Women">
+            <div class="category-overlay">
+              <div class="category-content">
+                <h3>For Her</h3>
+                <span>Shop Collection <i class="fas fa-arrow-right ms-2"></i></span>
+              </div>
             </div>
-            <!-- no ribbon here -->
           </div>
         </div>
 
         <!-- Card 3 -->
-        <div class="col-10 col-sm-6 col-md-4 col-lg-3 d-flex">
-          <div class="card-product w-100">
-            <div class="img-wrap">
-              <img src="imgs/best-seller-3.png" alt="Product 3">
-            </div>
-            <div class="ribbon">25%</div>
-          </div>
-        </div>
-
-        <!-- Card 4 -->
-        <div class="col-10 col-sm-6 col-md-4 col-lg-3 d-flex">
-          <div class="card-product w-100">
-            <div class="img-wrap">
-              <img src="imgs/best-seller-3.png" alt="Product 4">
+        <div class="col-md-4">
+          <div class="category-card" onclick="location.href='category.html'">
+            <img src="imgs/accesorices.png" class="category-img" alt="Accessories">
+            <div class="category-overlay">
+              <div class="category-content">
+                <h3>Accessories</h3>
+                <span>Shop Collection <i class="fas fa-arrow-right ms-2"></i></span>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-
-      <!-- Centered CTA -->
-      <div class="d-flex justify-content-center">
-        <button class="view-all-btn">VIEW ALL PRODUCTS</button>
       </div>
     </div>
   </section>
 
-  <section class="py-5">
+  <!-- Best Sellers -->
+  <section class="best-sellers">
+    <div class="container">
+      <div class="section-title">
+        <h2>Best Sellers</h2>
+        <p>Our most loved products this week</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Product 1 -->
+        <div class="col-sm-6 col-lg-3">
+          <div class="product-card">
+            <div class="product-image-container">
+              <span class="product-badge">New</span>
+              <a href="product-detail.html">
+                <img src="imgs/best-seller-1.png" alt="Product">
+              </a>
+            </div>
+            <div class="product-info">
+              <div class="product-category">Custom Mugs</div>
+              <h3 class="product-title"><a href="product-detail.html"
+                  class="text-dark text-decoration-none">Personalized Coffee Mug</a></h3>
+              <div class="product-price">$24.00</div>
+              <button class="pg-add-cart-btn">
+                <i class="fas fa-shopping-cart"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="col-sm-6 col-lg-3">
+          <div class="product-card">
+            <div class="product-image-container">
+              <span class="product-badge bg-danger">-15%</span>
+              <a href="product-detail.html">
+                <img src="imgs/best-seller-2.png" alt="Product">
+              </a>
+            </div>
+            <div class="product-info">
+              <div class="product-category">T-Shirts</div>
+              <h3 class="product-title"><a href="product-detail.html" class="text-dark text-decoration-none">Couple
+                  Matching Tees</a></h3>
+              <div class="product-price">$45.00 <span class="old-price">$52.00</span></div>
+              <button class="pg-add-cart-btn">
+                <i class="fas fa-shopping-cart"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="col-sm-6 col-lg-3">
+          <div class="product-card">
+            <div class="product-image-container">
+              <a href="product-detail.html">
+                <img src="imgs/best-seller-3.png" alt="Product">
+              </a>
+            </div>
+            <div class="product-info">
+              <div class="product-category">Pillows</div>
+              <h3 class="product-title"><a href="product-detail.html" class="text-dark text-decoration-none">Photo
+                  Cushion Cover</a></h3>
+              <div class="product-price">$19.99</div>
+              <button class="pg-add-cart-btn">
+                <i class="fas fa-shopping-cart"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="col-sm-6 col-lg-3">
+          <div class="product-card">
+            <div class="product-image-container">
+              <a href="product-detail.html">
+                <img src="imgs/best-seller-2.png" alt="Product"> <!-- Reusing image for demo -->
+              </a>
+            </div>
+            <div class="product-info">
+              <div class="product-category">Wall Art</div>
+              <h3 class="product-title"><a href="product-detail.html" class="text-dark text-decoration-none">Canvas
+                  Print Frame</a></h3>
+              <div class="product-price">$89.00</div>
+              <button class="pg-add-cart-btn">
+                <i class="fas fa-shopping-cart"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-5">
+        <a href="category.html" class="btn btn-outline-dark rounded-pill px-5 py-2 fw-bold">View All Products</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services / Trust -->
+  <section class="features-section">
     <div class="container">
       <div class="row g-4 justify-content-center">
-
-        <!-- Free Shipping -->
-        <div class="col-10 col-sm-6 col-md-3">
-          <div class="service-card">
-            <img src="imgs/free-delivery.png">
-            <h6 class="service-title">Free Shipping</h6>
-            <p class="service-text">Free on order over Rs 300</p>
+        <div class="col-sm-6 col-md-3">
+          <div class="feature-item">
+            <div class="feature-icon"><i class="fas fa-shipping-fast"></i></div>
+            <h5>Free Shipping</h5>
+            <p class="text-muted small">On all orders over $50</p>
           </div>
         </div>
-
-        <!-- Security Payment -->
-        <div class="col-10 col-sm-6 col-md-3">
-          <div class="service-card">
-            <img src="imgs/credit-card.png">
-            <h6 class="service-title">Security Payment</h6>
-            <p class="service-text">100% security payment</p>
+        <div class="col-sm-6 col-md-3">
+          <div class="feature-item">
+            <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+            <h5>Secure Payment</h5>
+            <p class="text-muted small">100% secure payment</p>
           </div>
         </div>
-
-        <!-- 30 Day Return -->
-        <div class="col-10 col-sm-6 col-md-3">
-          <div class="service-card">
-            <img src="imgs/return-box.png">
-            <h6 class="service-title">30 Day Return</h6>
-            <p class="service-text">30 day money guarantee</p>
+        <div class="col-sm-6 col-md-3">
+          <div class="feature-item">
+            <div class="feature-icon"><i class="fas fa-undo"></i></div>
+            <h5>30 Day Returns</h5>
+            <p class="text-muted small">Money back guarantee</p>
           </div>
         </div>
-
-        <!-- 24/7 Support -->
-        <div class="col-10 col-sm-6 col-md-3">
-          <div class="service-card">
-            <img src="imgs/support.png">
-            <h6 class="service-title">24/7 Support</h6>
-            <p class="service-text">Support every time fast</p>
+        <div class="col-sm-6 col-md-3">
+          <div class="feature-item">
+            <div class="feature-icon"><i class="fas fa-headset"></i></div>
+            <h5>24/7 Support</h5>
+            <p class="text-muted small">Dedicated support</p>
           </div>
         </div>
-
       </div>
     </div>
   </section>
 
-
+  <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      <div class="row align-items-start">
-        <!-- Logo Column -->
-        <div class="col-md-3 text-center text-md-start mb-3">
-          <img src="imgs/logo.png" alt="Print on Love Logo">
-
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-logo">
+            <img src="imgs/logo.png" alt="Logo" style="height: 60px;">
+          </div>
+          <p class="text-white-50 small pe-lg-5">Print on Love brings you the finest custom-printed gifts. From
+            heartfelt mugs to personalized apparel, we turn your memories into keepsakes.</p>
+          <div class="social-links">
+            <a href="#" class="social-btn"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-btn"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-btn"><i class="fab fa-pinterest"></i></a>
+          </div>
         </div>
 
-        <!-- Customer Service -->
-        <div class="col-md-3 mb-3">
-          <h5 class="footer-heading">Customer Service</h5>
-          <ul class="list-unstyled">
+        <div class="col-lg-2 col-md-6">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled footer-links">
+            <li><a href="#">About Us</a></li>
             <li><a href="#">Contact Us</a></li>
-            <li><a href="#">Returns</a></li>
-            <li><a href="#">Order History</a></li>
-            <li><a href="#">My Account</a></li>
-            <li><a href="#">Unsubscribe Notification</a></li>
-          </ul>
-        </div>
-
-        <!-- Information -->
-        <div class="col-md-3 mb-3">
-          <h5 class="footer-heading">Information</h5>
-          <ul class="list-unstyled">
-            <li><a href="#">Delivery Information</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms & Conditions</a></li>
-            <li><a href="#">Warranty</a></li>
             <li><a href="#">FAQ</a></li>
-            <li><a href="#">Seller Login</a></li>
+            <li><a href="#">Privacy Policy</a></li>
           </ul>
         </div>
 
-        <!-- Extras -->
-        <div class="col-md-3 mb-3">
-          <h5 class="footer-heading">Extras</h5>
-          <ul class="list-unstyled">
-            <li><a href="#">Gift Vouchers</a></li>
-            <li><a href="#">Wishlist</a></li>
-            <li><a href="#">Order History</a></li>
-            <li><a href="#">Track Your Order</a></li>
+        <div class="col-lg-2 col-md-6">
+          <h5>Shop</h5>
+          <ul class="list-unstyled footer-links">
+            <li><a href="#">For Him</a></li>
+            <li><a href="#">For Her</a></li>
+            <li><a href="#">Accessories</a></li>
+            <li><a href="#">New Arrivals</a></li>
           </ul>
         </div>
-      </div>
-      <div class="row justify-content-between align-items-center">
-      
-      <!-- Email Signup -->
-      <div class="col-md-6 col-lg-4">
-        <div class="email-input">
-          <input type="email" placeholder="Your Email">
-          <button>SignUP</button>
+
+        <div class="col-lg-4 col-md-6">
+          <h5>Newsletter</h5>
+          <p class="text-white-50 small">Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.
+          </p>
+          <div class="newsletter-box">
+            <input type="email" class="newsletter-input" placeholder="Enter your email">
+            <button class="newsletter-btn"><i class="fas fa-paper-plane"></i></button>
+          </div>
         </div>
       </div>
-
-      <!-- Social Icons -->
-      <div class="col-md-6 col-lg-8 text-end social-icons">
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-whatsapp"></i></a>
+      <div class="border-top border-secondary mt-5 pt-4 text-center text-white-50 small">
+        <p>&copy; 2024 Print on Love. All rights reserved.</p>
       </div>
-
-    </div>
-
     </div>
   </footer>
-
-
-  <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
-
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>

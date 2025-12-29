@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Login | Print on Love</title>
+  <title>Print on Love | Checkout</title>
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -21,6 +21,7 @@
 </head>
 
 <body>
+
 
   <div class="top-bar">
     <div class="container-fluid px-5 d-flex justify-content-between align-items-center flex-wrap">
@@ -117,72 +118,152 @@
     </div>
   </nav>
 
-
-  <!-- LOGIN SECTION -->
-  <section class="login-section">
-    <div class="login-card-wrapper">
-
-      <!-- Brand Side (Left) -->
-      <div class="login-brand-side">
-        <img src="imgs/logo.png" alt="Logo">
-        <h3>Welcome Back!</h3>
-        <p class="mb-0">Access your saved items, track orders, and experience the love of printing.</p>
-      </div>
-
-      <!-- Form Side (Right) -->
-      <div class="login-form-side">
-        <h3 class="login-title">Login</h3>
-
-        <form>
-          <label class="form-label text-muted small fw-bold">Email Address</label>
-          <div class="form-floating-custom">
-            <input type="email" placeholder="example@mail.com">
-            <i class="fas fa-envelope"></i>
-          </div>
-
-          <label class="form-label text-muted small fw-bold mt-2">Password</label>
-          <div class="form-floating-custom">
-            <input type="password" placeholder="********">
-            <i class="fas fa-lock"></i>
-          </div>
-
-          <div class="d-flex justify-content-between align-items-center mb-4">
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="rememberMe">
-              <label class="form-check-label small" for="rememberMe">Remember me</label>
-            </div>
-            <a href="#" class="small text-danger text-decoration-none">Forgot Password?</a>
-          </div>
-
-          <button type="submit" class="btn-login-custom">Sign In</button>
-
-          <div class="divider-text">
-            <span>Or continue with</span>
-          </div>
-
-          <div class="row g-2">
-            <div class="col-6">
-              <a href="#" class="social-login-btn">
-                <i class="fab fa-google text-danger"></i> Google
-              </a>
-            </div>
-            <div class="col-6">
-              <a href="#" class="social-login-btn">
-                <i class="fab fa-facebook-f text-primary"></i> Facebook
-              </a>
-            </div>
-          </div>
-
-          <p class="text-center mt-4 small text-muted">
-            Don't have an account? <a href="#" class="text-primary fw-bold text-decoration-none">Sign Up</a>
-          </p>
-
-        </form>
-      </div>
-
+  <!-- Page Header -->
+  <section class="page-header text-center">
+    <div class="container">
+      <h1>Secure Checkout</h1>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Checkout</li>
+        </ol>
+      </nav>
     </div>
   </section>
 
+  <!-- Checkout Section -->
+  <div class="container checkout-section mb-5">
+    <div class="row g-4">
+      <!-- Column 1: Billing Details -->
+      <div class="col-lg-4">
+        <div class="checkout-card h-100">
+          <h4 class="section-label text-center mb-4">CHECKOUT</h4>
+          <div class="alert alert-light text-center small mb-4">You can select address from here also</div>
+
+          <div class="mb-3">
+            <label class="form-label small fw-bold text-danger">Address Line 1 *</label>
+            <input type="text" class="form-control rounded-pill" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label small fw-bold">Address Line 2</label>
+            <input type="text" class="form-control rounded-pill">
+          </div>
+          <div class="mb-3">
+            <label class="form-label small fw-bold text-danger">Area *</label>
+            <input type="text" class="form-control rounded-pill" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label small fw-bold text-danger">District *</label>
+            <input type="text" class="form-control rounded-pill" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label small fw-bold text-danger">State *</label>
+            <input type="text" class="form-control rounded-pill" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label small fw-bold text-danger">Pincode *</label>
+            <input type="text" class="form-control rounded-pill" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label small fw-bold text-danger">Country *</label>
+            <input type="text" class="form-control rounded-pill bg-light" value="IN [+91]" readonly>
+          </div>
+          <div class="mb-3">
+            <label class="form-label small fw-bold text-danger">Mobile *</label>
+            <input type="text" class="form-control rounded-pill" required>
+          </div>
+        </div>
+      </div>
+
+      <!-- Column 2: Print Info -->
+      <div class="col-lg-4">
+        <div class="checkout-card h-100">
+          <h4 class="section-label text-center mb-4">Print Info</h4>
+
+          <div class="mb-3">
+            <label class="form-label small fw-bold">Print Image</label>
+            <div class="input-group">
+              <input type="file" class="form-control" id="printImage">
+            </div>
+            <div class="mt-2 text-center">
+              <img src="imgs/woman-icon.png" alt="Preview" class="img-fluid rounded shadow-sm"
+                style="max-height: 150px;">
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label small fw-bold">Print Message (Upto 150 characters)</label>
+            <textarea class="form-control rounded-3" rows="2"></textarea>
+          </div>
+          <div class="mb-3">
+            <label class="form-label small fw-bold">User Notes</label>
+            <textarea class="form-control rounded-3" rows="2"></textarea>
+          </div>
+
+          <div class="d-flex gap-2 justify-content-center mt-4">
+            <button class="btn btn-primary-custom rounded-pill px-3 py-2 small flex-fill">Online Payment</button>
+            <button class="btn btn-outline-dark rounded-pill px-3 py-2 small flex-fill">UPI Payment</button>
+          </div>
+
+          <!-- Coupon Code Section -->
+          <div class="mt-4 pt-3 border-top">
+            <label class="form-label small fw-bold">Coupon Code</label>
+            <div class="input-group">
+              <input type="text" class="form-control rounded-start-pill" placeholder="Enter coupon">
+              <button class="btn btn-dark rounded-end-pill" type="button">Apply</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Column 3: Order Summary -->
+      <div class="col-lg-4">
+        <!-- Order Items -->
+        <h5 class="mb-3">Your Order</h5>
+        <div class="checkout-product-item mb-3 bg-white p-2 rounded shadow-sm">
+          <div class="d-flex align-items-start gap-3">
+            <img src="imgs/shop-men.png" class="rounded" width="60" alt="Product">
+            <div class="flex-grow-1">
+              <h6 class="mb-1 small fw-bold">Black Baniyan Small Size</h6>
+              <div class="small text-muted">Price: ₹ 70</div>
+              <div class="small text-muted">Subtotal: ₹ 70</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="checkout-product-item mb-3 bg-white p-2 rounded shadow-sm">
+          <div class="d-flex align-items-start gap-3">
+            <img src="imgs/shop-men.png" class="rounded" width="60" alt="Product">
+            <div class="flex-grow-1">
+              <h6 class="mb-1 small fw-bold">Black Baniyan Medium Size</h6>
+              <div class="small text-muted">Price: ₹ 70</div>
+              <div class="small text-muted">Subtotal: ₹ 70</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Totals -->
+        <div class="checkout-card mt-3">
+          <div class="d-flex justify-content-between mb-2 small">
+            <span>Shipping</span>
+            <span>₹ 0</span>
+          </div>
+          <div class="d-flex justify-content-between mb-2 small">
+            <span>Subtotal</span>
+            <span class="fw-bold">₹ 140</span>
+          </div>
+          <div class="d-flex justify-content-between mb-3 border-top pt-2">
+            <span class="fw-bold">Total</span>
+            <span class="fw-bold">₹ 140</span>
+          </div>
+
+          <button class="btn btn-primary-custom w-100 rounded-pill py-2 shadow-sm">
+            Confirm Order
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <footer class="footer">
     <div class="container">
@@ -237,10 +318,4 @@
     </div>
   </footer>
 
-
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
 </body>
-
-</html>
